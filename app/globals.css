@@ -6,20 +6,22 @@ img {
 }
 
 @theme {
-  --color-cta-gold: #C9A227;
-  --color-cta-hover: #B8961E;
-
-  --color-green-primary: #1B5E20;
-  --color-green-dark: #4c5b20;
-  --color-green-light: #4CAF50;
-
-  --color-earth-brown: #6D4C41;
-  --color-olive-muted: #8FAE8B;
-  --color-export-blue: #1E3A5F;
-
-  --color-white: #FFFFFF;
+  --color-main-green: #404f1d;
   --color-off-white: #F8FAF8;
-  --color-gray-light: #E5E7EB;
-  --color-gray-medium: #6B7280;
-  --color-gray-dark: #374151;
+  --color-beige: #f4ede6;
+  --color-higlight-green: #00ff00;
+}
+
+::selection{
+  background-color: var(--color-main-green);
+  color: var(--color-off-white);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
 }
