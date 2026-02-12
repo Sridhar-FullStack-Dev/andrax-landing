@@ -112,7 +112,6 @@ export default function Menu({ theme = "light" }: MenuProps) {
 
   return (
     <div ref={containerRef} className="w-1/3 flex items-start justify-start">
-      {/* Toggle Button */}
       <div className="menu-toggle z-50 relative" onClick={toggleMenu}>
         <div ref={topBarRef} className={`menu-toggle-bar ${toggleColor}`}></div>
         <div
@@ -121,9 +120,7 @@ export default function Menu({ theme = "light" }: MenuProps) {
         ></div>
       </div>
 
-      {/* Menu Overlay */}
       <div className={`menu-overlay ${isOpen ? "open" : ""}`} ref={overlayRef}>
-        {/* Background Columns */}
         <div className="menu-overlay-bar">
           <div className="bar"></div>
           <div className="bar"></div>
@@ -132,7 +129,6 @@ export default function Menu({ theme = "light" }: MenuProps) {
           <div className="bar"></div>
         </div>
 
-        {/* Nav Links */}
         <div className="menu-nav-container">
           {menuLinks.map((link, index) => (
             <div key={index} className="menu-nav-item">
@@ -147,7 +143,6 @@ export default function Menu({ theme = "light" }: MenuProps) {
           ))}
         </div>
 
-        {/* Footer info or extra polish can go here if needed */}
         <div
           className="flex justify-between items-end text-off-white opacity-0 animate-in fade-in duration-1000 delay-500"
           style={{ opacity: isOpen ? 1 : 0, transition: "opacity 0.5s 0.5s" }}
