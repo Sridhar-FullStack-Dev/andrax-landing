@@ -7,6 +7,7 @@ import Logo from "../ui/logo";
 import { useLayoutEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Menu from "./Menu/Menu";
 
 export default function Navbar() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -58,7 +59,8 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full px-8 flex items-center justify-between uppercase text-sm font-normal ${archivo.className} ${textColor} transition-colors duration-300`}
     >
-      <div className="w-1/3 flex items-start justify-start">Menu</div>
+      <Menu />
+      
       <div className="w-1/3 flex items-center justify-center">
         <Logo src={logoSrc} />
       </div>
