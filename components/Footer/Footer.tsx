@@ -40,21 +40,25 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="w-1/2 flex flex-col justify-between space-y-12 text-right">
+        <div className="w-1/2 flex flex-col justify-between text-right">
           <p>
             if you have any questions <br /> feel free to contact us:
           </p>
 
-          <div>
+          <div className="w-fit ml-auto mt-6">
             <Link
               href={"mailto:info@andraxexportspvtltd.com"}
-              className="text-lg font-medium"
+              className="text-lg text-right font-medium"
             >
-              info@andraxexportspvtltd.com
+              <UnderlineAnimText
+                text="info@andraxexportspvtltd.com"
+                lineColor="bg-main-green"
+                textColor="text-main-green"
+              />
             </Link>
           </div>
 
-          <div>
+          <div className="w-fit ml-auto mt-4">
             <Link href={"mailto:info@andraxexportspvtltd.com"}>external</Link>
           </div>
         </div>
@@ -65,9 +69,9 @@ export default function Footer() {
           <AiOutlineCopyright /> 2026. Andrax Exports pvt. ltd.
         </div>
 
-        <div className="flex items-center justify-center gap-1 w-1/3">
+        {/* <div className="flex items-center justify-center gap-1 w-1/3">
           <Logo color="#404f1d" />
-        </div>
+        </div> */}
 
         <div className="flex items-center justify-end gap-6 w-1/3">
           <Link href={"/privacy-policy"}>
