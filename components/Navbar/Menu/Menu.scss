@@ -2,37 +2,37 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   padding: 2em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   pointer-events: none;
   z-index: 100;
-}
 
-.menu-overlay.open {
-  pointer-events: all;
+  &.open {
+    pointer-events: all;
+  }
 }
 
 .menu-overlay-bar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   display: flex;
   pointer-events: none;
   z-index: -1;
-}
 
-.menu-overlay-bar .bar {
-  width: 20%;
-  height: 100%;
-  background-color: var(--color-main-green);
-  transform: scaleY(0);
-  transform-origin: top;
+  .bar {
+    width: 20%;
+    height: 100%;
+    background-color: var(--color-main-brown);
+    transform: scaleY(0);
+    transform-origin: top;
+  }
 }
 
 .menu-nav-container {
@@ -48,23 +48,27 @@
   overflow: hidden;
   margin: 0.5em 0;
   cursor: pointer;
-}
 
-.menu-nav-link {
-  font-family: var(--font-archivo);
-  font-size: 5vw;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: var(--color-off-white);
-  line-height: 1;
-  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-  transform: translateY(30px);
-  transition: color 0.3s ease;
-  display: block;
-}
+  .menu-nav-link {
+    font-family: var(--font-archivo);
+    font-size: 5vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-off-white);
+    line-height: 1;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    transform: translateY(30px);
+    transition: color 0.3s ease;
+    display: block;
 
-.menu-nav-link:hover {
-  color: #c5a880; /* Gold/Brown accent from palette */
+    &:hover {
+      color: #c5a880;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 12vw;
+    }
+  }
 }
 
 .menu-close-icon {
@@ -97,11 +101,4 @@
   height: 2px;
   background-color: currentColor;
   transition: background-color 0.3s ease;
-}
-
-/* For mobile responsiveness */
-@media (max-width: 768px) {
-  .menu-nav-link {
-    font-size: 12vw;
-  }
 }

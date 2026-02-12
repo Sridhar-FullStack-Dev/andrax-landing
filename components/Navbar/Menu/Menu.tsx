@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useState, useRef, useEffect, useLayoutEffect } from "react";
-import Link from "next/link";
-import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import "./Menu.css";
+import gsap from "gsap";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+import "./Menu.scss";
 
 const menuLinks = [
   { path: "/", label: "Home" },
@@ -53,7 +53,7 @@ export default function Menu({ theme = "light" }: MenuProps) {
           ease: "power4.out",
           clipPath: "polygon(0 100%, 100% 100%, 100% 0%, 0 0%)",
         },
-        "-=0.7", // Overlap with bar animation
+        "-=0.7",
       );
 
       tlRef.current = tl;
@@ -71,16 +71,12 @@ export default function Menu({ theme = "light" }: MenuProps) {
     }
   }, [isOpen]);
 
-  // Determine toggle color based on theme and open state
-  // When open, the toggle becomes the close button and is on the green background, so it needs to be white.
-  // When closed, it depends on the Navbar theme.
   const toggleColor = isOpen
     ? "bg-off-white"
     : theme === "light"
       ? "bg-off-white"
-      : "bg-main-green";
+      : "bg-off-green";
 
-  // We'll also animate the hamburger to X
   const topBarRef = useRef<HTMLDivElement>(null);
   const bottomBarRef = useRef<HTMLDivElement>(null);
 

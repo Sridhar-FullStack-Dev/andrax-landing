@@ -5,9 +5,15 @@ img {
   user-select: none;
 }
 
+:root {
+  --color-main-green: #404f1d;
+  --color-main-brown: #6A452C;
+  --color-off-white: #F8FAF8;
+}
+
 @theme {
   --color-main-green: #404f1d;
-  --color-main-brown: #7A5C3E;
+  --color-main-brown: #6A452C;
   --color-off-white: #F8FAF8;
 }
 
