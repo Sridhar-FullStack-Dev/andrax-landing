@@ -1,4 +1,4 @@
-import { Archivo, JetBrains_Mono, Orbitron } from "next/font/google";
+import { Archivo, JetBrains_Mono } from "next/font/google";
 
 export const archivo = Archivo({
   subsets: ["latin"],
