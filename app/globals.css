@@ -8,8 +8,6 @@ img {
 @theme {
   --color-main-green: #404f1d;
   --color-off-white: #F8FAF8;
-  --color-beige: #f4ede6;
-  --color-higlight-green: #00ff00;
 }
 
 ::selection{

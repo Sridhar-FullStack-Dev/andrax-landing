@@ -1,10 +1,9 @@
 "use client";
-import { AiOutlineCopyright } from "react-icons/ai";
 import { archivo } from "@/lib/fonts";
-import Image from "next/image";
 import Link from "next/link";
-import UnderlineAnimText from "../ui/underline-anim";
+import { AiOutlineCopyright } from "react-icons/ai";
 import Logo from "../ui/logo";
+import UnderlineAnimText from "../ui/underline-anim";
 
 export default function Footer() {
   return (
@@ -63,15 +62,14 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
       <div className="flex justify-between items-end text-sm">
         <div className="flex items-center justify-start gap-1 w-1/3">
           <AiOutlineCopyright /> 2026. Andrax Exports pvt. ltd.
         </div>
 
-        {/* <div className="flex items-center justify-center gap-1 w-1/3">
-          <Logo color="#404f1d" />
-        </div> */}
+        <div className="flex items-center justify-center gap-1 w-1/3">
+          <Logo src="/logo-green.png" />
+        </div>
 
         <div className="flex items-center justify-end gap-6 w-1/3">
           <Link href={"/privacy-policy"}>
