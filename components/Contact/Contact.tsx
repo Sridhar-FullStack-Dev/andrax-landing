@@ -23,11 +23,11 @@ export default function Contact() {
       gsap.fromTo(
         imageRef.current,
         {
-          y: -100,
+          y: -200,
           scale: 1.1,
         },
         {
-          y: 100,
+          y: 200,
           scrollTrigger: {
             trigger: containerRef.current,
             start: "top bottom",
@@ -52,7 +52,7 @@ export default function Contact() {
       <Image
         ref={imageRef}
         src={
-          "https://images.pexels.com/photos/3571563/pexels-photo-3571563.jpeg"
+          "https://images.pexels.com/photos/29288699/pexels-photo-29288699.jpeg"
         }
         alt=""
         width={1200}
