@@ -57,10 +57,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full px-8 flex items-center justify-between uppercase text-sm font-normal ${archivo.className} ${textColor} transition-colors duration-300`}
+      className={`fixed top-0 left-0 w-full px-8 flex items-center justify-between uppercase text-sm font-normal ${archivo.className} ${textColor} transition-colors duration-300 z-30`}
     >
-      <Menu />
-      
+      <Menu theme={theme} />
+
       <div className="w-1/3 flex items-center justify-center">
         <Logo src={logoSrc} />
       </div>
