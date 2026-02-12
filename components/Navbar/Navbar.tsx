@@ -23,7 +23,7 @@ export default function Navbar() {
 
         ScrollTrigger.create({
           trigger: section,
-          start: "top top",
+          start: "top 5%",
           end: "bottom top",
           onEnter: () => setTheme(themeValue === "white" ? "dark" : "light"),
           onEnterBack: () =>
@@ -31,21 +31,7 @@ export default function Navbar() {
         });
       });
 
-      const handleScroll = () => {
-        const scrollPosition = window.scrollY;
-        sections.forEach((section) => {
-          const rect = section.getBoundingClientRect();
-          const sectionTop = rect.top + window.scrollY;
-          const sectionBottom = sectionTop + rect.height;
-
-          if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-            const themeValue = section.getAttribute("data-theme");
-            setTheme(themeValue === "white" ? "dark" : "light");
-          }
-        });
-      };
-
-      handleScroll();
+      ScrollTrigger.refresh();
     });
 
     return () => ctx.revert();

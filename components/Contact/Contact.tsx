@@ -1,18 +1,56 @@
+"use client";
+
 import { archivo, jetbrainsMono } from "@/lib/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import PixelCursor from "../PixelCursor/PixelCursor";
 import UnderlineAnimText from "../ui/underline-anim";
+import { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Contact() {
+  const containerRef = useRef<HTMLElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
+
+  useGSAP(
+    () => {
+      if (!imageRef.current) return;
+
+      gsap.fromTo(
+        imageRef.current,
+        {
+          y: -100,
+          scale: 1.1,
+        },
+        {
+          y: 100,
+          scrollTrigger: {
+            trigger: containerRef.current,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1,
+          },
+          ease: "none",
+        },
+      );
+    },
+    { scope: containerRef },
+  );
+
   return (
     <section
+      ref={containerRef}
       id="contact"
       data-theme="green"
-      className="h-screen w-full bg-off-white relative"
+      className="h-screen w-full bg-off-white relative overflow-hidden"
     >
-      <div className="absolute inset-0 bg-black/30 z-1"></div>
+      <div className="absolute inset-0 bg-black/30 z-1 pointer-events-none"></div>
       <Image
+        ref={imageRef}
         src={
           "https://images.pexels.com/photos/3571563/pexels-photo-3571563.jpeg"
         }
@@ -22,9 +60,9 @@ export default function Contact() {
         className="w-full h-full object-cover"
       />
 
-      <div className="absolute inset-0 z-2 p-8">
+      <div className="absolute inset-0 z-2 p-8 pointer-events-none">
         <section
-          className={`${archivo.className} h-full w-full px-8 py-20 text-off-white`}
+          className={`${archivo.className} px-8 py-20 text-off-white pointer-events-auto`}
         >
           <h1 className={`${jetbrainsMono.className} text-8xl uppercase`}>
             Contact us
