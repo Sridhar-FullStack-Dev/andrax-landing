@@ -48,7 +48,7 @@ export default function Contact() {
       data-theme="green"
       className="h-screen w-full bg-off-white relative overflow-hidden"
     >
-      <div className="absolute inset-0 bg-black/30 z-1 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-black/50 z-1 pointer-events-none"></div>
       <Image
         ref={imageRef}
         src={
@@ -87,6 +87,27 @@ export default function Contact() {
               <p className="mt-2">3rd Street, San Francisco,</p>
               <p>CA 94107, US.</p>
             </div>
+          </div>
+
+          <div className="flex justify-end items-end mt-72">
+            <form className="flex flex-col justify-end items-center w-1/2">
+              <input
+                type="text"
+                placeholder="Name"
+                className="bg-transparent border-b placeholder:uppercase uppercase p-4 outline-none w-full"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                className="bg-transparent border-b placeholder:uppercase uppercase p-4 outline-none w-full"
+              />
+
+              <textarea
+                placeholder="Message"
+                className="bg-transparent border-b placeholder:uppercase uppercase p-4 outline-none w-full"
+              ></textarea>
+              <button type="submit">Send</button>
+            </form>
           </div>
         </section>
       </div>
