@@ -38,6 +38,7 @@ export default function Curve() {
       transition: {
         duration: 0.8,
         ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
+        delay: 0.6,
       },
     },
   };

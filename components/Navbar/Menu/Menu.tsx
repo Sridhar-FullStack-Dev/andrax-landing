@@ -22,23 +22,36 @@ export default function Menu() {
       <AnimatePresence mode="wait">
         {isActive && (
           <motion.div
-            variants={menuSlide}
-            initial="initial"
-            animate="enter"
-            exit="exit"
-            className="fixed top-0 left-0 h-screen w-1/2 bg-secondary-main z-30 text-secondary-accent flex items-start"
+            initial={{ backgroundColor: "transparent" }}
+            animate={{
+              backgroundColor: "#00000020",
+              transition: { duration: 0.5, delay: 0.8 },
+            }}
+            exit={{
+              backgroundColor: "transparent",
+              transition: { duration: 0.5, delay: 1.5 },
+            }}
+            className="w-screen h-screen fixed top-0 left-0 z-30 flex"
           >
-            <Curve />
-
-            <button
-              type="button"
-              onClick={() => setIsActive(!isActive)}
-              className="cursor-pointer uppercase flex justify-start items-center mt-8 px-8"
+            <motion.div
+              variants={menuSlide}
+              initial="initial"
+              animate="enter"
+              exit="exit"
+              className="h-full w-1/2 bg-secondary-main text-secondary-accent flex items-start"
             >
-              <RollingText text="Close" />
-            </button>
+              <Curve />
 
-            <Nav />
+              <button
+                type="button"
+                onClick={() => setIsActive(!isActive)}
+                className="cursor-pointer uppercase flex justify-start items-center mt-8 px-8"
+              >
+                <RollingText text="Close" />
+              </button>
+
+              <Nav />
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

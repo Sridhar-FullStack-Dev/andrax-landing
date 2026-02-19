@@ -3,7 +3,7 @@ export const menuSlide = {
   enter: {
     x: "0",
     transition: {
-      duration: 0.8,
+      duration: 1,
       ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
     },
   },
@@ -12,24 +12,25 @@ export const menuSlide = {
     transition: {
       duration: 0.8,
       ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
+      delay: 0.6,
     },
   },
 };
 
 export const slide = {
-  initial: { x: -80 },
+  initial: { y: 80 },
   enter: (i: number) => ({
-    x: 0,
+    y: 0,
     transition: {
-      duration: 0.8,
+      duration: 1,
       ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
       delay: 0.05 * i,
     },
   }),
   exit: (i: number) => ({
-    x: -80,
+    y: 80,
     transition: {
-      duration: 0.8,
+      duration: 0.5,
       ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
       delay: 0.05 * i,
     },

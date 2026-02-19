@@ -11,23 +11,36 @@ const links = [
 
 export default function Nav() {
   return (
-    <div className="flex flex-col justify-between h-full border-l w-full">
-      <div className="flex flex-col gap-3">
-        {links.map((link, i) => (
-          <div key={i} className="perspective-[120px] overflow-hidden">
-            <motion.div
-              custom={i}
-              variants={slide}
-              initial="initial"
-              animate="enter"
-              exit="exit"
+    <div className="py-8 h-full w-full">
+      <div className="flex flex-col justify-between relative h-full">
+        <div className="flex flex-col gap-3 px-8">
+          {links.map((link, i) => (
+            <div
+              key={i}
+              className="perspective-distant perspective-origin-bottom overflow-hidden"
             >
-              <Link href={link.href} className="text-5xl text-white font-light">
-                {link.title}
-              </Link>
-            </motion.div>
-          </div>
-        ))}
+              <motion.div
+                custom={i}
+                variants={slide}
+                initial="initial"
+                animate="enter"
+                exit="exit"
+                className="origin-bottom"
+                whileHover={{ x: 30 }}
+                transition={{ ease: "easeInOut" }}
+              >
+                <Link
+                  href={link.href}
+                  className="text-5xl text-off-white hover:text-accent-main transition-colors font-bold"
+                >
+                  {link.title}
+                </Link>
+              </motion.div>
+            </div>
+          ))}
+        </div>
+
+        <div className="absolute left-0 top-0 h-full w-px py-8 bg-off-white-2/50" />
       </div>
     </div>
   );
