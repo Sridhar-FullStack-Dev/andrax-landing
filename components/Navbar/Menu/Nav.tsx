@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import Link from "next/link";
 import { slide } from "./anim";
+import { useLenis } from "lenis/react";
 
 const links = [
   { title: "Home", href: "/" },
@@ -9,7 +10,13 @@ const links = [
   { title: "Contact", href: "/#contact" },
 ];
 
-export default function Nav() {
+export default function Nav({
+  setIsActive,
+}: {
+  setIsActive: (value: boolean) => void;
+}) {
+  const lenis = useLenis();
+
   return (
     <div className="py-8 h-full w-full">
       <div className="flex flex-col justify-between relative h-full">
@@ -31,6 +38,10 @@ export default function Nav() {
               >
                 <Link
                   href={link.href}
+                  onClick={() => {
+                    lenis?.scrollTo("#contact");
+                    setIsActive(false);
+                  }}
                   className="text-5xl text-off-white hover:text-accent-main transition-colors font-bold"
                 >
                   {link.title}

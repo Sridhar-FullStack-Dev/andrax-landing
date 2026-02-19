@@ -4,6 +4,7 @@ import Link from "next/link";
 import { AiOutlineCopyright } from "react-icons/ai";
 import Logo from "../ui/logo";
 import UnderlineAnimText from "../ui/underline-anim";
+import RollingText from "../ui/rolling-text";
 
 export default function Footer() {
   return (
@@ -89,10 +90,9 @@ export default function Footer() {
           </Link>
 
           <Link href={"https://portfolio-sridhar.vercel.app/"} target="_blank">
-            <UnderlineAnimText
+            <RollingText
               text="Website by Sridhar"
-              lineColor="bg-primary-main"
-              textColor="text-primary-main/50"
+              textClassName="opacity-50 mt-1"
             />
           </Link>
         </div>

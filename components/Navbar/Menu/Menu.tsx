@@ -50,7 +50,7 @@ export default function Menu() {
                 <RollingText text="Close" />
               </button>
 
-              <Nav />
+              <Nav setIsActive={setIsActive} />
             </motion.div>
           </motion.div>
         )}
