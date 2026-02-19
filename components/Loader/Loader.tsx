@@ -1,5 +1,5 @@
 "use client";
-import { galada } from "@/lib/fonts";
+import { climateCrisis } from "@/lib/fonts";
 import gsap from "gsap";
 import { useLayoutEffect, useRef } from "react";
 
@@ -27,7 +27,6 @@ const Loader = () => {
         },
         0,
       )
-
         .to(
           digit2Ref.current,
           {
@@ -37,7 +36,6 @@ const Loader = () => {
           },
           0,
         )
-
         .to(
           digit3Ref.current,
           {
@@ -47,12 +45,6 @@ const Loader = () => {
           },
           0,
         );
-
-      tl.to(".counter-container", {
-        opacity: 0,
-        duration: 0.5,
-        delay: 0.2,
-      });
 
       tl.to(containerRef.current, {
         clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
@@ -80,11 +72,11 @@ const Loader = () => {
     <div ref={comp} className="fixed inset-0 z-9999 pointer-events-none">
       <div
         ref={containerRef}
-        className="absolute inset-0 bg-accent-main flex items-center justify-center w-full h-full pointer-events-auto"
+        className="absolute inset-0 bg-primary-main flex items-center justify-center w-full h-full pointer-events-auto"
         style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
       >
         <div
-          className={`${galada.className} counter-container flex overflow-hidden text-off-white text-6xl md:text-9xl font-bold h-[1em] leading-none absolute bottom-5 right-5`}
+          className={`${climateCrisis.className} counter-container flex overflow-hidden text-off-white text-6xl md:text-9xl font-bold h-[1em] leading-none absolute bottom-5 left-5`}
           style={{
             maskImage:
               "linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)",

@@ -1,10 +1,23 @@
-import { Archivo, BioRhyme, Climate_Crisis, JetBrains_Mono, Ribeye, ZCOOL_KuaiLe } from "next/font/google";
+import {
+  Archivo,
+  Climate_Crisis,
+  JetBrains_Mono,
+  Lexend_Deca,
+} from "next/font/google";
 
 export const archivo = Archivo({
   subsets: ["latin"],
   display: "swap",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
+  weight: ["300", "400", "700", "800", "900"],
+  style: ["normal"],
+  preload: true,
+});
+
+export const lexendDeca = Lexend_Deca({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "700", "800", "900"],
+  style: ["normal"],
   preload: true,
 });
 
@@ -16,7 +29,7 @@ export const jetbrainsMono = JetBrains_Mono({
   preload: true,
 });
 
-export const galada = Climate_Crisis({
+export const climateCrisis = Climate_Crisis({
   subsets: ["latin"],
   display: "swap",
   weight: ["400"],

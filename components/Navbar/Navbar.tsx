@@ -1,12 +1,12 @@
 "use client";
 
-import { archivo } from "@/lib/fonts";
-import Link from "next/link";
-import UnderlineAnimText from "../ui/underline-anim";
-import Logo from "../ui/logo";
-import { useLayoutEffect, useState } from "react";
+import { lexendDeca } from "@/lib/fonts";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
+import { useLayoutEffect, useState } from "react";
+import Logo from "../ui/logo";
+import RollingText from "../ui/rolling-text";
 import Menu from "./Menu/Menu";
 
 export default function Navbar() {
@@ -38,25 +38,20 @@ export default function Navbar() {
   }, []);
 
   const textColor = theme === "light" ? "text-off-white" : "text-primary-main";
-  const lineColor = theme === "light" ? "bg-off-white" : "bg-primary-main";
   const logoSrc = theme === "light" ? "/logo-gold.png" : "/logo-green.png";
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full px-8 flex items-center justify-between uppercase text-sm font-normal ${archivo.className} ${textColor} transition-colors duration-300 z-30`}
+      className={`fixed top-0 left-0 w-full px-8 flex items-center justify-between uppercase text-base font-normal ${lexendDeca.className} ${textColor} transition-colors duration-300 z-30`}
     >
-      <Menu theme={theme} />
+      <Menu />
 
       <div className="w-1/3 flex items-center justify-center">
         <Logo src={logoSrc} />
       </div>
 
       <Link href={"/contact-us"} className="w-1/3 flex items-end justify-end">
-        <UnderlineAnimText
-          text="Contact us"
-          lineColor={lineColor}
-          textColor={textColor}
-        />
+        <RollingText text="Contact us" textClassName="text-base font-normal" />
       </Link>
     </nav>
   );
