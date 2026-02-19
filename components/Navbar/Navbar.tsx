@@ -37,8 +37,8 @@ export default function Navbar() {
     return () => ctx.revert();
   }, []);
 
-  const textColor = theme === "light" ? "text-off-white" : "text-main-green";
-  const lineColor = theme === "light" ? "bg-off-white" : "bg-main-green";
+  const textColor = theme === "light" ? "text-off-white" : "text-primary-main";
+  const lineColor = theme === "light" ? "bg-off-white" : "bg-primary-main";
   const logoSrc = theme === "light" ? "/logo-gold.png" : "/logo-green.png";
 
   return (

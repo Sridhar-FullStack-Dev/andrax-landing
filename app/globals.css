@@ -6,19 +6,27 @@ img {
 }
 
 :root {
-  --color-main-green: #404f1d;
-  --color-main-brown: #6A452C;
-  --color-off-white: #F8FAF8;
+  --color-primary-main: #546736;
+  --color-secondary-main: #43522B;
+  --color-accent-main: #A48127;
+  --color-secondary-accent: #E9B94A;
+  --color-off-white: #E3DBB7;
+  --color-off-white-2: #D8CEA2;
 }
 
 @theme {
-  --color-main-green: #404f1d;
-  --color-main-brown: #6A452C;
-  --color-off-white: #F8FAF8;
+  --color-primary-main: #546736;
+  --color-secondary-main: #43522B;
+  --color-accent-main: #A48127;
+  --color-secondary-accent: #E9B94A;
+  --color-off-white: #E3DBB7;
+  --color-off-white-2: #D8CEA2;
+  
+  
 }
 
 ::selection{
-  background-color: var(--color-main-green);
+  background-color: var(--color-primary-main);
   color: var(--color-off-white);
 }
 

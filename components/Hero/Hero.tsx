@@ -3,7 +3,7 @@ export default function Hero() {
     <section
       id="hero"
       data-theme="green"
-      className="h-screen w-full bg-main-green px-8 py-20"
+      className="h-screen w-full bg-primary-main px-8 py-20"
     >
       Hero
     </section>

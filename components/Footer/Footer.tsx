@@ -8,19 +8,19 @@ import UnderlineAnimText from "../ui/underline-anim";
 export default function Footer() {
   return (
     <footer
-      className={`fixed bottom-0 left-0 w-full h-100 bg-beige text-main-green flex flex-col justify-between pt-16 pb-8 px-8 -z-10 uppercase ${archivo.className}`}
+      className={`fixed bottom-0 left-0 w-full h-100 bg-beige text-primary-main flex flex-col justify-between pt-16 pb-8 px-8 -z-10 uppercase ${archivo.className}`}
     >
       <div className="flex justify-between">
         <div className="w-1/2 flex justify-between">
           <div>
-            <h6 className="text-main-green/60 mb-1 font-medium">products</h6>
+            <h6 className="text-primary-main/60 mb-1 font-medium">products</h6>
             <p>Macronutrient Fertilizers</p>
             <p>Macronutrient Fertilizers</p>
             <p>Feed Additives</p>
           </div>
 
           <div>
-            <h6 className="text-main-green/60 mb-1 font-medium">science</h6>
+            <h6 className="text-primary-main/60 mb-1 font-medium">science</h6>
             <p>CropTab™ NPK</p>
             <p>Nutripeak™ Micros</p>
             <p>ElevateFeed™</p>
@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h6 className="text-main-green/60 mb-1 font-medium">about</h6>
+            <h6 className="text-primary-main/60 mb-1 font-medium">about</h6>
             <p>Our Story</p>
             <p>Our Team</p>
           </div>
@@ -51,8 +51,8 @@ export default function Footer() {
             >
               <UnderlineAnimText
                 text="info@andraxexportspvtltd.com"
-                lineColor="bg-main-green"
-                textColor="text-main-green"
+                lineColor="bg-primary-main"
+                textColor="text-primary-main"
               />
             </Link>
           </div>
@@ -75,24 +75,24 @@ export default function Footer() {
           <Link href={"/privacy-policy"}>
             <UnderlineAnimText
               text="Privacy Policy"
-              lineColor="bg-main-green"
-              textColor="text-main-green"
+              lineColor="bg-primary-main"
+              textColor="text-primary-main"
             />
           </Link>
 
           <Link href={"/terms-of-use"}>
             <UnderlineAnimText
               text="Terms Of Use"
-              lineColor="bg-main-green"
-              textColor="text-main-green"
+              lineColor="bg-primary-main"
+              textColor="text-primary-main"
             />
           </Link>
 
           <Link href={"https://portfolio-sridhar.vercel.app/"} target="_blank">
             <UnderlineAnimText
               text="Website by Sridhar"
-              lineColor="bg-main-green"
-              textColor="text-main-green/50"
+              lineColor="bg-primary-main"
+              textColor="text-primary-main/50"
             />
           </Link>
         </div>
