@@ -38,7 +38,7 @@ export default function Menu() {
               initial="initial"
               animate="enter"
               exit="exit"
-              className="h-full w-1/2 bg-secondary-main text-secondary-accent flex items-start"
+              className="h-full w-1/2 bg-secondary-main text-white flex items-start"
             >
               <Curve />
 
