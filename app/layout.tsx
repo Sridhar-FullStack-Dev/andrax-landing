@@ -71,7 +71,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        {/* <Loader /> */}
+        <Loader />
         <SmoothScroll>
           <div className="relative z-10 bg-off-white mb-100 shadow-b">
             <Navbar />

@@ -34,7 +34,7 @@ export default function Nav({
   return (
     <div className="py-8 h-full w-full">
       <div className="flex flex-col justify-between relative h-full">
-        <div className="flex flex-col gap-3 px-8">
+        <div className="flex flex-col gap-3 px-8 items-start justify-center h-full">
           {links.map((link, i) => (
             <div
               key={i}
@@ -68,7 +68,7 @@ export default function Nav({
                     onClick={(e) => {
                       if (link.subLinks) e.preventDefault();
                       else {
-                        lenis?.scrollTo("#contact"); // Default scrolling behavior for contact
+                        lenis?.scrollTo("#contact");
                         setIsActive(false);
                       }
                     }}
@@ -106,7 +106,7 @@ export default function Nav({
           ))}
         </div>
 
-        <div className="absolute left-0 top-0 h-full w-px py-8 bg-off-white-2/20" />
+        <div className="absolute left-0 top-0 h-full w-px py-8 bg-secondary-accent/50 rounded-full" />
       </div>
     </div>
   );

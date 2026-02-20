@@ -44,7 +44,7 @@ export default function Curve() {
   };
 
   return dimensions.height > 0 ? (
-    <svg className="absolute top-0 -right-[99px] w-[100px] h-full fill-primary-main stroke-none">
+    <svg className="absolute top-0 -right-[99px] w-[100px] h-full fill-secondary-main stroke-none">
       <motion.path
         variants={curveUser}
         initial="initial"

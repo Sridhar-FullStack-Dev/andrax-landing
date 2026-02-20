@@ -38,14 +38,13 @@ export default function Menu() {
               initial="initial"
               animate="enter"
               exit="exit"
-              className="h-full w-1/2 bg-secondary-main text-white flex items-start"
+              className="h-full w-1/2 bg-primary-main flex items-start"
             >
-              <Curve />
 
               <button
                 type="button"
                 onClick={() => setIsActive(!isActive)}
-                className="cursor-pointer uppercase flex justify-start items-center mt-8 px-8"
+                className="text-white cursor-pointer uppercase flex justify-start items-center mt-8 px-8"
               >
                 <RollingText text="Close" />
               </button>
