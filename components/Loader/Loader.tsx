@@ -72,9 +72,10 @@ const Loader = () => {
     <div ref={comp} className="fixed inset-0 z-9999 pointer-events-none">
       <div
         ref={containerRef}
-        className="absolute inset-0 bg-primary-main flex items-center justify-center w-full h-full pointer-events-auto"
+        className="absolute inset-0 bg-secondary-main flex items-center justify-center w-full h-full pointer-events-auto"
         style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
       >
+
         <div
           className={`${climateCrisis.className} counter-container flex overflow-hidden text-off-white text-6xl md:text-9xl font-bold h-[1em] leading-none absolute bottom-5 left-5`}
           style={{

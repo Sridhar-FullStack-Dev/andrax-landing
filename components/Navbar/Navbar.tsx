@@ -37,7 +37,8 @@ export default function Navbar() {
     return () => ctx.revert();
   }, []);
 
-  const textColor = theme === "light" ? "text-off-white-2" : "text-primary-main";
+  const textColor =
+    theme === "light" ? "text-off-white-2" : "text-primary-main";
   const logoSrc = theme === "light" ? "/logo-gold.png" : "/logo-green.png";
 
   return (
@@ -46,9 +47,9 @@ export default function Navbar() {
     >
       <Menu />
 
-      <div className="w-1/3 flex items-center justify-center">
+      <Link href={"/"} className="w-1/3 flex items-center justify-center">
         <Logo src={logoSrc} />
-      </div>
+      </Link>
 
       <Link href={"/contact-us"} className="w-1/3 flex items-end justify-end">
         <RollingText text="Contact us" textClassName="text-base font-normal" />

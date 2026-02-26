@@ -10,7 +10,7 @@ img {
 }
 
 :root {
-  --color-primary-main: #5a6a33;
+  --color-primary-main: #143423;
   --color-secondary-main: #43522B;
   --color-accent-main: #A48127;
   --color-secondary-accent: #E9B94A;
@@ -53,7 +53,7 @@ img {
 }
 
 @theme {
-  --color-primary-main: #5a6a33;
+  --color-primary-main: #143423;
   --color-secondary-main: #43522B;
   --color-accent-main: #A48127;
   --color-secondary-accent: #E9B94A;

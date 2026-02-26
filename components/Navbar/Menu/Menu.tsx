@@ -1,9 +1,8 @@
 "use client";
-import RollingText from "@/components/ui/rolling-text";
+
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
-import { menuSlide } from "./anim";
-import Curve from "./Curve";
+import { menuExpand } from "./anim";
 import Nav from "./Nav";
 
 export default function Menu() {
@@ -14,43 +13,51 @@ export default function Menu() {
       <button
         type="button"
         onClick={() => setIsActive(!isActive)}
-        className="cursor-pointer uppercase w-1/3 flex justify-start items-center"
+        className={`cursor-pointer uppercase w-1/3 flex justify-start items-center relative z-50 ${
+          isActive ? "text-white" : ""
+        }`}
       >
-        <RollingText text="Menu" />
+        <div className="relative overflow-hidden w-[60px] h-[24px]">
+          <AnimatePresence mode="wait">
+            {!isActive ? (
+              <motion.div
+                key="menu"
+                initial={{ y: "100%", opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: "-100%", opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="absolute inset-0 flex items-center justify-start"
+              >
+                Menu
+              </motion.div>
+            ) : (
+              <motion.div
+                key="close"
+                initial={{ y: "100%", opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: "-100%", opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="absolute inset-0 flex items-center justify-start"
+              >
+                Close
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
       </button>
 
       <AnimatePresence mode="wait">
         {isActive && (
           <motion.div
-            initial={{ backgroundColor: "transparent" }}
-            animate={{
-              backgroundColor: "#00000020",
-              transition: { duration: 0.5, delay: 0.8 },
-            }}
-            exit={{
-              backgroundColor: "transparent",
-              transition: { duration: 0.5, delay: 1.5 },
-            }}
-            className="w-screen h-screen fixed top-0 left-0 z-30 flex"
+            variants={menuExpand}
+            initial="initial"
+            animate="enter"
+            exit="exit"
+            className="fixed top-0 left-0 w-1/2 h-screen bg-black text-white z-40 overflow-hidden"
           >
-            <motion.div
-              variants={menuSlide}
-              initial="initial"
-              animate="enter"
-              exit="exit"
-              className="h-full w-1/2 bg-primary-main flex items-start"
-            >
-
-              <button
-                type="button"
-                onClick={() => setIsActive(!isActive)}
-                className="text-white cursor-pointer uppercase flex justify-start items-center mt-8 px-8"
-              >
-                <RollingText text="Close" />
-              </button>
-
+            <div className="h-full w-full pt-[100px] px-8">
               <Nav setIsActive={setIsActive} />
-            </motion.div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

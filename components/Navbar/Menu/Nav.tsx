@@ -1,8 +1,8 @@
+import { useLenis } from "lenis/react";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useState } from "react";
 import { slide } from "./anim";
-import { useLenis } from "lenis/react";
 
 const links = [
   {
