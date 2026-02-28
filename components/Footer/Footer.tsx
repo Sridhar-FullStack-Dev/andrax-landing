@@ -1,10 +1,10 @@
 "use client";
 import { archivo } from "@/lib/fonts";
+import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineCopyright } from "react-icons/ai";
-import Logo from "../ui/logo";
-import UnderlineAnimText from "../ui/underline-anim";
 import RollingText from "../ui/rolling-text";
+import UnderlineAnimText from "../ui/underline-anim";
 
 export default function Footer() {
   return (
@@ -69,7 +69,13 @@ export default function Footer() {
         </div>
 
         <div className="flex items-center justify-center gap-1 w-1/3">
-          <Logo src="/logo-green.png" />
+          <Image
+            src={"/logo-green.png"}
+            width={200}
+            height={200}
+            alt="Andrax Pvt Ltd."
+            className="size-20 object-contain"
+          />
         </div>
 
         <div className="flex items-center justify-end gap-6 w-1/3">

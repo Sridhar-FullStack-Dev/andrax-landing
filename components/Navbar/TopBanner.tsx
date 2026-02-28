@@ -1,8 +1,8 @@
-"use client";
+import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
-import UnderlineAnimText from "../ui/underline-anim";
+import { useEffect, useState } from "react";
 import { IoClose } from "react-icons/io5";
-import { useState, useEffect } from "react";
+import { TbCircleDashedPercentage } from "react-icons/tb";
 
 export default function TopBanner() {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,31 +21,43 @@ export default function TopBanner() {
     setIsVisible(false);
   };
 
-  if (!mounted || !isVisible) return null;
+  if (!mounted) return null;
 
   return (
-    <section className="bg-primary-main text-center text-white py-2 text-xs relative">
-      <div className="flex justify-center items-center gap-2">
-        <h1 className="flex items-center justify-center gap-1">
-          Don't Miss Out! Coco Peet Special Offer Live Now.
-        </h1>
+    <AnimatePresence>
+      {isVisible && (
+        <motion.section
+          initial={{ height: 0, opacity: 0 }}
+          animate={{ height: "auto", opacity: 1 }}
+          exit={{ height: 0, opacity: 0 }}
+          transition={{ duration: 0.3 }}
+          className="bg-primary-main text-center text-white text-xs relative overflow-hidden"
+        >
+          <div className="py-2">
+            <div className="flex justify-center items-center gap-2">
+              <h1 className="flex justify-center items-center gap-1">
+                <TbCircleDashedPercentage className="size-5" />
+                Don't Miss Out! Coco Peet Special Offer Live Now.
+              </h1>
 
-        <Link href={"/"} className="text-secondary-accent">
-          <UnderlineAnimText
-            text="Contact Now"
-            lineColor="#E9B94A"
-            textColor="#E9B94A"
-          />
-        </Link>
-      </div>
+              <Link
+                href={"/"}
+                className="text-secondary-accent underline underline-offset-1"
+              >
+                Contact Now
+              </Link>
+            </div>
 
-      <button
-        type="button"
-        onClick={handleClose}
-        className="absolute top-1.5 right-4 cursor-pointer"
-      >
-        <IoClose className="size-4" />
-      </button>
-    </section>
+            <button
+              type="button"
+              onClick={handleClose}
+              className="absolute top-1.5 right-4 cursor-pointer"
+            >
+              <IoClose className="size-4" />
+            </button>
+          </div>
+        </motion.section>
+      )}
+    </AnimatePresence>
   );
 }
