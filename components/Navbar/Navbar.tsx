@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useLayoutEffect, useState } from "react";
 import Logo from "../ui/logo";
 import RollingText from "../ui/rolling-text";
-import Menu from "./Menu/Menu";
+import TopBanner from "./TopBanner";
 
 export default function Navbar() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -43,17 +43,23 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full px-8 flex items-center justify-between uppercase text-base font-normal ${lexendDeca.className} ${textColor} transition-colors duration-300 z-30`}
+      className={`fixed top-0 left-0 w-full uppercase text-base font-normal ${lexendDeca.className} ${textColor} transition-colors duration-300 z-30`}
     >
-      <Menu />
+      <TopBanner />
 
-      <Link href={"/"} className="w-1/3 flex items-center justify-center">
-        <Logo src={logoSrc} />
-      </Link>
+      <div className="flex items-center justify-between px-8">
+        <div className="w-1/3">Menu</div>
 
-      <Link href={"/contact-us"} className="w-1/3 flex items-end justify-end">
-        <RollingText text="Contact us" textClassName="text-base font-normal" />
-      </Link>
+        <Link href={"/"} className="w-1/3 flex items-center justify-center">
+          <Logo src={logoSrc} />
+        </Link>
+        <Link href={"/contact-us"} className="w-1/3 flex items-end justify-end">
+          <RollingText
+            text="Contact us"
+            textClassName="text-base font-normal"
+          />
+        </Link>
+      </div>
     </nav>
   );
 }

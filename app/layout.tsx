@@ -1,7 +1,6 @@
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import SmoothScroll from "@/components/SmoothScroll/SmoothScroll";
-import Loader from "@/components/Loader/Loader";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -71,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        <Loader />
+        {/* <Loader /> */}
         <SmoothScroll>
           <div className="relative z-10 bg-off-white mb-100 shadow-b">
             <Navbar />
