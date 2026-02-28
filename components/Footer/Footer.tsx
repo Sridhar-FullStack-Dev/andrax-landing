@@ -9,7 +9,7 @@ import UnderlineAnimText from "../ui/underline-anim";
 export default function Footer() {
   return (
     <footer
-      className={`fixed bottom-0 left-0 w-full h-100 bg-beige text-primary-main flex flex-col justify-between pt-16 pb-8 px-8 -z-10 uppercase ${archivo.className}`}
+      className={`fixed bottom-0 left-0 w-full h-100 bg-white text-primary-main text-base flex flex-col justify-between pt-16 pb-8 px-8 -z-10 uppercase ${archivo.className}`}
     >
       <div className="flex justify-between">
         <div className="w-1/2 flex justify-between">
@@ -63,6 +63,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      
       <div className="flex justify-between items-end text-sm">
         <div className="flex items-center justify-start gap-1 w-1/3">
           <AiOutlineCopyright /> 2026. Andrax Exports pvt. ltd.

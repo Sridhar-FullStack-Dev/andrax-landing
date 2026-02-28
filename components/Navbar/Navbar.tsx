@@ -1,11 +1,12 @@
 "use client";
-import { lexendDeca } from "@/lib/fonts";
+import { archivo } from "@/lib/fonts";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
+import { IoChevronDown } from "react-icons/io5";
 import RollingText from "../ui/rolling-text";
 import TopBanner from "./TopBanner";
 
@@ -43,13 +44,22 @@ export default function Navbar() {
   return (
     <nav
       ref={navRef}
-      className={`fixed top-0 left-0 w-full uppercase text-sm font-normal ${lexendDeca.className} text-primary-main transition-colors duration-300 z-30 bg-white`}
+      className={`fixed top-0 left-0 w-full uppercase text-sm font-medium ${archivo.className} text-primary-main transition-colors duration-300 z-30 bg-white`}
     >
       <TopBanner />
 
-      <div className="flex items-center justify-between px-8 bg-white shadow-sm">
-        <div className="w-1/3 flex items-center justify-start">
-          <RollingText text="Menu" />
+      <div className="flex items-center justify-between px-8 bg-white shadow">
+        <div className="w-1/3 flex items-center justify-start gap-6">
+          <RollingText text="Home" />
+          <RollingText text="About" />
+          <RollingText text="Services" />
+
+          <div>
+            <div className="flex justify-between items-center gap-1">
+              <RollingText text="Products" />
+              <IoChevronDown className="size-4" />
+            </div>
+          </div>
         </div>
 
         <Link href={"/"} className="w-1/3 flex items-center justify-center">
@@ -62,12 +72,10 @@ export default function Navbar() {
           />
         </Link>
 
-        <Link
-          href={"/contact-us"}
-          className="w-1/3 flex items-center justify-end"
-        >
+        <div className="w-1/3 flex items-center justify-end gap-6">
+          <RollingText text="blog" />
           <RollingText text="Contact us" />
-        </Link>
+        </div>
       </div>
     </nav>
   );

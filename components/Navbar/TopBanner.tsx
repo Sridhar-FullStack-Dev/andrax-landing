@@ -1,3 +1,4 @@
+import { lexendDeca } from "@/lib/fonts";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -33,7 +34,7 @@ export default function TopBanner() {
           animate={{ height: "auto", opacity: 1 }}
           exit={{ height: 0, opacity: 0 }}
           transition={{ duration: 0.3 }}
-          className="bg-primary-main text-center text-white text-xs relative overflow-hidden"
+          className={`bg-primary-main text-center text-white text-xs relative overflow-hidden ${lexendDeca.className}`}
         >
           <div className="py-2">
             <div className="flex justify-center items-center gap-2">
@@ -44,7 +45,7 @@ export default function TopBanner() {
 
               <Link
                 href={"/"}
-                className="text-secondary-accent underline underline-offset-1"
+                className="text-off-white-2 underline underline-offset-1"
               >
                 Contact Now
               </Link>
