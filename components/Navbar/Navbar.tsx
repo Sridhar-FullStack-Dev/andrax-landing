@@ -16,40 +16,24 @@ export default function Navbar() {
 
   useGSAP(
     () => {
-      let lastScrollY = window.scrollY;
-
-      const showNav = gsap.fromTo(
-        navRef.current,
-        { y: 0 },
-        {
-          y: () => -(navRef.current?.offsetHeight || 100),
-          duration: 0.3,
-          ease: "power2.inOut",
-          paused: true,
-        },
-      );
+      const showNav = gsap.to(navRef.current, {
+        yPercent: -100,
+        duration: 0.5,
+        ease: "power1.inOut",
+        paused: true,
+      });
 
       ScrollTrigger.create({
         start: "top top",
-        end: 99999,
+        end: "max",
         onUpdate: (self) => {
-          const currentScrollY = window.scrollY;
-
-          if (currentScrollY <= 0) {
+          if (self.scroll() <= 0) {
             showNav.reverse();
-          } else if (
-            self.direction === 1 &&
-            currentScrollY > lastScrollY + 10
-          ) {
+          } else if (self.direction === 1) {
             showNav.play();
-          } else if (
-            self.direction === -1 &&
-            currentScrollY < lastScrollY - 10
-          ) {
+          } else if (self.direction === -1) {
             showNav.reverse();
           }
-
-          lastScrollY = currentScrollY;
         },
       });
     },
@@ -64,7 +48,7 @@ export default function Navbar() {
       <TopBanner />
 
       <div className="flex items-center justify-between px-8 bg-white shadow-sm">
-        <div className="w-1/3">
+        <div className="w-1/3 flex items-center justify-start">
           <RollingText text="Menu" />
         </div>
 
@@ -77,7 +61,11 @@ export default function Navbar() {
             className="size-15 object-contain"
           />
         </Link>
-        <Link href={"/contact-us"} className="w-1/3 flex items-end justify-end">
+
+        <Link
+          href={"/contact-us"}
+          className="w-1/3 flex items-center justify-end"
+        >
           <RollingText text="Contact us" />
         </Link>
       </div>

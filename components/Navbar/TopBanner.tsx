@@ -2,18 +2,20 @@ import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { IoClose } from "react-icons/io5";
-import { TbCircleDashedPercentage } from "react-icons/tb";
+import { LuBadgePercent } from "react-icons/lu";
 
 export default function TopBanner() {
   const [isVisible, setIsVisible] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
-    const hideBanner = sessionStorage.getItem("hideTopBanner");
-    if (!hideBanner) {
-      setIsVisible(true);
-    }
+    Promise.resolve().then(() => {
+      setMounted(true);
+      const hideBanner = sessionStorage.getItem("hideTopBanner");
+      if (!hideBanner) {
+        setIsVisible(true);
+      }
+    });
   }, []);
 
   const handleClose = () => {
@@ -36,8 +38,8 @@ export default function TopBanner() {
           <div className="py-2">
             <div className="flex justify-center items-center gap-2">
               <h1 className="flex justify-center items-center gap-1">
-                <TbCircleDashedPercentage className="size-5" />
-                Don't Miss Out! Coco Peet Special Offer Live Now.
+                <LuBadgePercent className="size-4" />
+                Don&apos;t Miss Out! Coco Peet Special Offer Live Now.
               </h1>
 
               <Link
