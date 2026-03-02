@@ -45,7 +45,7 @@ export default function TopBanner() {
 
               <Link
                 href={"/"}
-                className="text-off-white-2 underline underline-offset-1"
+                className="text-off-white underline underline-offset-1"
               >
                 Contact Now
               </Link>
