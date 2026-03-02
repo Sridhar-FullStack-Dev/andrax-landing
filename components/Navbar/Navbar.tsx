@@ -186,18 +186,8 @@ export default function Navbar() {
           height: "calc(100vh - 100%)",
         }}
       >
-        <div className="">
-          {/* Close Button */}
-          <button
-            onClick={closeDropdown}
-            className="absolute top-6 right-6 p-2 rounded-full hover:bg-gray-100 transition-colors text-gray-500 hover:text-gray-900 border border-transparent"
-            aria-label="Close menu"
-          >
-            <IoClose className="size-4" />
-          </button>
-
-          {/* Top Links Section */}
-          <div className="grid grid-cols-5 gap-8 mb-16">
+        <div>
+          <div className="flex justify-between items-start gap-8 mb-16">
             <DropdownColumn
               title="Growing Media"
               links={[
@@ -228,9 +218,16 @@ export default function Navbar() {
               title="Industrial"
               links={["Coir Fiber", "Coir Pith", "Curled Coir", "Bristle Coir"]}
             />
+
+            <button
+              onClick={closeDropdown}
+              aria-label="Close menu"
+              className="text-lg px-4 pb-2 pt-3 bg-primary-main uppercase text-off-white-2 cursor-pointer"
+            >
+              <RollingText text="close" />
+            </button>
           </div>
 
-          {/* Top Products */}
           <div>
             <h2 className="text-4xl my-4 text-off-white-2 px-4 py-2 w-fit flex justify-center items-center gap-2 relative">
               <div

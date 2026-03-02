@@ -40,7 +40,7 @@ export default function TopBanner() {
             <div className="flex justify-center items-center gap-2">
               <h1 className="flex justify-center items-center gap-1">
                 <LuBadgePercent className="size-4" />
-                Don&apos;t Miss Out! Coco Peet Special Offer Live Now.
+                Don&apos;t Miss Out! Coco Peat Special Offer Live Now.
               </h1>
 
               <Link
