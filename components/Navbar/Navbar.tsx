@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef } from "react";
+import { useRef, useCallback } from "react";
 import { IoChevronDown, IoClose } from "react-icons/io5";
 import RollingText from "../ui/rolling-text";
 import UnderlineAnimText from "../ui/underline-anim";
@@ -63,56 +63,60 @@ export default function Navbar() {
     { scope: navRef },
   );
 
-  const openDropdown = contextSafe(() => {
-    gsap.to(dropdownRef.current, {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      duration: 0.6,
-      ease: "power3.inOut",
-      overwrite: "auto",
-    });
+  const openDropdown = useCallback(() => {
+    contextSafe(() => {
+      gsap.to(dropdownRef.current, {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        duration: 0.6,
+        ease: "power3.inOut",
+        overwrite: "auto",
+      });
 
-    gsap.to(lineRef.current, {
-      scaleX: 1,
-      duration: 0.6,
-      ease: "power3.inOut",
-      overwrite: "auto",
-    });
-
-    gsap.fromTo(
-      topProductsBgRef.current,
-      { scaleX: 0 },
-      {
+      gsap.to(lineRef.current, {
         scaleX: 1,
         duration: 0.6,
-        delay: 0.3,
-        ease: "power3.out",
+        ease: "power3.inOut",
         overwrite: "auto",
-      },
-    );
-  });
+      });
 
-  const closeDropdown = contextSafe(() => {
-    gsap.to(dropdownRef.current, {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-      duration: 0.4,
-      ease: "power3.inOut",
-      overwrite: "auto",
-    });
+      gsap.fromTo(
+        topProductsBgRef.current,
+        { scaleX: 0 },
+        {
+          scaleX: 1,
+          duration: 0.6,
+          delay: 0.3,
+          ease: "power3.out",
+          overwrite: "auto",
+        },
+      );
+    })();
+  }, [contextSafe]);
 
-    gsap.to(lineRef.current, {
-      scaleX: 0,
-      duration: 0.4,
-      ease: "power3.inOut",
-      overwrite: "auto",
-    });
+  const closeDropdown = useCallback(() => {
+    contextSafe(() => {
+      gsap.to(dropdownRef.current, {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+        duration: 0.4,
+        ease: "power3.inOut",
+        overwrite: "auto",
+      });
 
-    gsap.to(topProductsBgRef.current, {
-      scaleX: 0,
-      duration: 0.4,
-      ease: "power3.inOut",
-      overwrite: "auto",
-    });
-  });
+      gsap.to(lineRef.current, {
+        scaleX: 0,
+        duration: 0.4,
+        ease: "power3.inOut",
+        overwrite: "auto",
+      });
+
+      gsap.to(topProductsBgRef.current, {
+        scaleX: 0,
+        duration: 0.4,
+        ease: "power3.inOut",
+        overwrite: "auto",
+      });
+    })();
+  }, [contextSafe]);
 
   return (
     <nav
