@@ -5,8 +5,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useCallback } from "react";
-import { IoChevronDown, IoClose } from "react-icons/io5";
+import { useCallback, useRef } from "react";
+import { IoChevronDown } from "react-icons/io5";
 import RollingText from "../ui/rolling-text";
 import UnderlineAnimText from "../ui/underline-anim";
 import TopBanner from "./TopBanner";
@@ -177,7 +177,6 @@ export default function Navbar() {
         />
       </div>
 
-      {/* Full Page Dropdown */}
       <div
         ref={dropdownRef}
         className="absolute top-full left-0 w-full bg-white px-8 py-16"
@@ -186,7 +185,7 @@ export default function Navbar() {
           height: "calc(100vh - 100%)",
         }}
       >
-        <div>
+        <div className="h-full flex flex-col justify-between">
           <div className="flex justify-between items-start gap-8 mb-16">
             <DropdownColumn
               title="Growing Media"
@@ -283,9 +282,9 @@ function DropdownColumn({ title, links }: { title: string; links: string[] }) {
 
 function ProductCard({ name, imageUrl }: { name: string; imageUrl: string }) {
   return (
-    <div className="group cursor-pointer relative aspect-4/5 overflow-hidden">
+    <div className="group cursor-pointer relative aspect-4/5 overflow-hidden h-full">
       <Image src={imageUrl} alt={name} fill className="object-cover" />
-      <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
+      <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-100 transition-opacity" />
       <p className="absolute bottom-6 left-6 text-white font-medium text-lg tracking-wide">
         {name}
       </p>
