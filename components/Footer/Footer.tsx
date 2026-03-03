@@ -15,17 +15,18 @@ export default function Footer() {
         <div className="w-1/2 flex justify-between">
           <div>
             <h6 className="text-primary-main/60 mb-1 font-medium">products</h6>
-            <p>Macronutrient Fertilizers</p>
-            <p>Macronutrient Fertilizers</p>
-            <p>Feed Additives</p>
+            <p>Cocopeat Blocks</p>
+            <p>Coir Fiber</p>
+            <p>Grow Bags</p>
+            <p>Potting Mix</p>
           </div>
 
           <div>
-            <h6 className="text-primary-main/60 mb-1 font-medium">science</h6>
-            <p>CropTab™ NPK</p>
-            <p>Nutripeak™ Micros</p>
-            <p>ElevateFeed™</p>
-            <p>Food Safety</p>
+            <h6 className="text-primary-main/60 mb-1 font-medium">exports</h6>
+            <p>Live Plants</p>
+            <p>Coconut Products</p>
+            <p>Fresh Mangoes</p>
+            <p>Coir Pith</p>
           </div>
 
           <div>
@@ -52,18 +53,28 @@ export default function Footer() {
             >
               <UnderlineAnimText
                 text="info@andraxexportspvtltd.com"
-                lineColor="bg-primary-main"
-                textColor="text-primary-main"
+                lineColor="#143423"
+                textColor="#143423"
               />
             </Link>
           </div>
 
           <div className="w-fit ml-auto mt-4">
-            <Link href={"mailto:info@andraxexportspvtltd.com"}>external</Link>
+            <Link
+              href={"https://wa.me/919876543210"}
+              target="_blank"
+              className="text-sm"
+            >
+              <UnderlineAnimText
+                text="WhatsApp: +91 98765 43210"
+                lineColor="#143423"
+                textColor="#143423"
+              />
+            </Link>
           </div>
         </div>
       </div>
-      
+
       <div className="flex justify-between items-end text-sm">
         <div className="flex items-center justify-start gap-1 w-1/3">
           <AiOutlineCopyright /> 2026. Andrax Exports pvt. ltd.
@@ -83,16 +94,16 @@ export default function Footer() {
           <Link href={"/privacy-policy"}>
             <UnderlineAnimText
               text="Privacy Policy"
-              lineColor="bg-primary-main"
-              textColor="text-primary-main"
+              lineColor="#143423"
+              textColor="#143423"
             />
           </Link>
 
           <Link href={"/terms-of-use"}>
             <UnderlineAnimText
               text="Terms Of Use"
-              lineColor="bg-primary-main"
-              textColor="text-primary-main"
+              lineColor="#143423"
+              textColor="#143423"
             />
           </Link>
 

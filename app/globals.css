@@ -158,3 +158,50 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+/* Marquee animations */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-slow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee-slow {
+  animation: marquee-slow 120s linear infinite;
+}
+
+/* Bounce right for scroll arrow */
+@keyframes bounce-right {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+}
+
+.animate-bounce-right {
+  animation: bounce-right 1.5s ease-in-out infinite;
+}
+
+/* Shadow bottom for sticky sections */
+.shadow-b {
+  box-shadow: 0 20px 60px -15px rgba(0, 0, 0, 0.2);
+}
