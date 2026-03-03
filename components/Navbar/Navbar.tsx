@@ -186,45 +186,91 @@ export default function Navbar() {
         }}
       >
         <div className="h-full flex flex-col justify-between">
-          <div className="flex justify-between items-start gap-8 mb-16">
+          <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-6 justify-between items-start mb-16 relative">
             <DropdownColumn
-              title="Growing Media"
+              title="Coir Products"
               links={[
-                "Cocopeat Blocks",
-                "Grow Bags",
-                "Coco Discs/Coins",
-                "Coco Chips",
-              ]}
-            />
-            <DropdownColumn
-              title="Horticulture"
-              links={["Coir Pots", "Coir Poles", "Mulch Mats", "Weed Control"]}
-            />
-            <DropdownColumn
-              title="Erosion Control"
-              links={["Coir Geotextiles", "Coir Logs", "Coir Wattles"]}
-            />
-            <DropdownColumn
-              title="Home & Garden"
-              links={[
+                "Coir Mulch Mats",
+                "Coconut Shell Biochar",
+                "Coco Peat (Coir Pith)",
+                "Coco Peat",
+                "Coconut milk",
+                "Desiccated Coconut Powder",
+                "Coconut Chips",
+                "Coco Husk Chips",
                 "Coir Mats",
-                "Coir Baskets",
-                "Coir Twine/Yarn",
-                "Pet Bedding",
               ]}
             />
             <DropdownColumn
-              title="Industrial"
-              links={["Coir Fiber", "Coir Pith", "Curled Coir", "Bristle Coir"]}
+              title="Chemical Products"
+              links={[
+                "Sodium Carbonate",
+                "Sulphuric Acid",
+                "Caustic Soda",
+                "Potassium",
+                "Potassium Sulphate",
+                "Ammonium",
+                "Ethanol alcohol",
+              ]}
+            />
+            <DropdownColumn
+              title="Fruits & Vegetable"
+              links={[
+                "Apple",
+                "Strawberry",
+                "Pumpkin",
+                "Green Beans",
+                "Onion big",
+                "Small onion",
+                "Broccoli",
+                "Drumstick",
+                "Imported nuts",
+                "Cashewnut",
+                "Dates",
+                "Pistachio",
+              ]}
+            />
+            <DropdownColumn
+              title="Scrap Products"
+              links={[
+                "Copper scrap",
+                "Aluminum scrap",
+                "Plastic granules",
+                "Cotton box",
+              ]}
+            />
+            <DropdownColumn
+              title="Animals Feed"
+              links={["soyabean", "corn", "Alfalfa Hay"]}
+            />
+            <DropdownColumn
+              title="Plant & Nursing"
+              links={[
+                "Coconut Seedlings",
+                "Tissue Culture Plants",
+                "Seed Nuts",
+                "Nursery Polybag Plants",
+              ]}
+            />
+            <DropdownColumn
+              title="Petroleum Base"
+              links={[
+                "Petroleum Jelly",
+                "Synthetic Fibers",
+                "Paraffin Wax",
+                "Detergent Raw Materials",
+              ]}
             />
 
-            <button
-              onClick={closeDropdown}
-              aria-label="Close menu"
-              className="text-lg px-4 pb-2 pt-3 bg-primary-main uppercase text-off-white-2 cursor-pointer"
-            >
-              <RollingText text="close" />
-            </button>
+            <div className="col-span-2 lg:col-span-4 xl:col-span-7 flex justify-end">
+              <button
+                onClick={closeDropdown}
+                aria-label="Close menu"
+                className="text-lg px-4 pb-2 pt-3 bg-primary-main uppercase text-off-white-2 cursor-pointer w-fit"
+              >
+                <RollingText text="close" />
+              </button>
+            </div>
           </div>
 
           <div>
@@ -238,15 +284,15 @@ export default function Navbar() {
             </h2>
             <div className="grid grid-cols-4 gap-6">
               <ProductCard
-                name="Coconut Husks"
+                name="Coir Mulch Mats"
                 imageUrl="https://images.pexels.com/photos/27596374/pexels-photo-27596374.jpeg"
               />
               <ProductCard
-                name="Coir Peat Blocks"
+                name="Fresh Fruits & Vegetables"
                 imageUrl="https://images.pexels.com/photos/33702958/pexels-photo-33702958.jpeg"
               />
               <ProductCard
-                name="Tree Resins"
+                name="Chemical Products"
                 imageUrl="https://images.pexels.com/photos/7256839/pexels-photo-7256839.jpeg"
               />
               <ProductCard

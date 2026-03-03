@@ -95,7 +95,7 @@ export default function Contact() {
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10">
         {/* Heading */}
         <div className="contact-heading mb-20">
           <span
