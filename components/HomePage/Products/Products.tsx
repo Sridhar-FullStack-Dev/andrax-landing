@@ -91,7 +91,7 @@ export default function Products() {
   }, [activeTab]);
 
   return (
-    <section id="products" className="bg-white py-20 px-6 overflow-hidden">
+    <section id="products" className="bg-white py-20 px-8 overflow-hidden">
       <div className="products-heading flex justify-between items-end">
         <div>
           <span

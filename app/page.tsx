@@ -1,10 +1,11 @@
+import About from "@/components/HomePage/About/About";
 import Products from "@/components/HomePage/Products/Products";
 
 export default function Home() {
   return (
     <main>
       <section className="h-screen">Hero</section>
-    <About
+      <About />
       <Products />
     </main>
   );
