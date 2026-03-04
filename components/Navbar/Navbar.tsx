@@ -10,6 +10,7 @@ import { IoChevronDown } from "react-icons/io5";
 import RollingText from "../ui/rolling-text";
 import UnderlineAnimText from "../ui/underline-anim";
 import TopBanner from "./TopBanner";
+import { IoClose } from "react-icons/io5";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -179,6 +180,7 @@ export default function Navbar() {
 
       <div
         ref={dropdownRef}
+        data-lenis-prevent
         className="absolute top-full left-0 w-full bg-white px-8 py-16"
         style={{
           clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
@@ -195,10 +197,6 @@ export default function Navbar() {
                 "Coco Peat (Coir Pith)",
                 "Coco Peat",
                 "Coconut milk",
-                "Desiccated Coconut Powder",
-                "Coconut Chips",
-                "Coco Husk Chips",
-                "Coir Mats",
               ]}
             />
             <DropdownColumn
@@ -209,8 +207,6 @@ export default function Navbar() {
                 "Caustic Soda",
                 "Potassium",
                 "Potassium Sulphate",
-                "Ammonium",
-                "Ethanol alcohol",
               ]}
             />
             <DropdownColumn
@@ -221,13 +217,6 @@ export default function Navbar() {
                 "Pumpkin",
                 "Green Beans",
                 "Onion big",
-                "Small onion",
-                "Broccoli",
-                "Drumstick",
-                "Imported nuts",
-                "Cashewnut",
-                "Dates",
-                "Pistachio",
               ]}
             />
             <DropdownColumn
@@ -261,27 +250,34 @@ export default function Navbar() {
                 "Detergent Raw Materials",
               ]}
             />
-
-            <div className="col-span-2 lg:col-span-4 xl:col-span-7 flex justify-end">
-              <button
-                onClick={closeDropdown}
-                aria-label="Close menu"
-                className="text-lg px-4 pb-2 pt-3 bg-primary-main uppercase text-off-white-2 cursor-pointer w-fit"
-              >
-                <RollingText text="close" />
-              </button>
-            </div>
           </div>
 
           <div>
-            <h2 className="text-4xl my-4 text-off-white-2 px-4 py-2 w-fit flex justify-center items-center gap-2 relative">
-              <div
-                ref={topProductsBgRef}
-                className="absolute inset-0 bg-primary-main -z-10 origin-left"
-                style={{ transform: "scaleX(0)" }}
-              ></div>
-              Top Products
-            </h2>
+            <div className="flex justify-between gap-4 items-center">
+              <div className="text-xl my-4 text-off-white-2 px-4 py-3 w-fit flex justify-center items-center gap-2 relative">
+                <div
+                  ref={topProductsBgRef}
+                  className="absolute inset-0 bg-primary-main -z-10 origin-left"
+                  style={{ transform: "scaleX(0)" }}
+                ></div>
+                Top Products
+              </div>
+
+              <div className="flex justify-end items-center gap-4">
+                <button className="text-lg px-4 py-2 flex items-center justify-center gap-1 bg-white border border-primary-main uppercase text-primary-main cursor-pointer w-fit">
+                  Show All Products
+                </button>
+
+                <button
+                  onClick={closeDropdown}
+                  aria-label="Close menu"
+                  className="text-lg px-4 py-2 flex items-center justify-center gap-1 bg-primary-main border border-primary-main uppercase text-off-white-2 cursor-pointer w-fit"
+                >
+                  <IoClose className="size-6" />
+                  <RollingText text="close" />
+                </button>
+              </div>
+            </div>
             <div className="grid grid-cols-4 gap-6">
               <ProductCard
                 name="Coir Mulch Mats"
@@ -316,8 +312,8 @@ function DropdownColumn({ title, links }: { title: string; links: string[] }) {
           <li key={i} className="cursor-pointer">
             <UnderlineAnimText
               text={link}
-              textColor="#143423"
-              lineColor="#143423"
+              textColor="#14342399"
+              lineColor="#43522B"
             />
           </li>
         ))}
@@ -329,7 +325,13 @@ function DropdownColumn({ title, links }: { title: string; links: string[] }) {
 function ProductCard({ name, imageUrl }: { name: string; imageUrl: string }) {
   return (
     <div className="group cursor-pointer relative aspect-4/5 overflow-hidden h-full">
-      <Image src={imageUrl} alt={name} fill className="object-cover" />
+      <Image
+        src={imageUrl}
+        alt={name}
+        height={512}
+        width={512}
+        className="size-full object-cover"
+      />
       <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-100 transition-opacity" />
       <p className="absolute bottom-6 left-6 text-white font-medium text-lg tracking-wide">
         {name}

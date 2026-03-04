@@ -1,9 +1,11 @@
-import Contact from "@/components/Contact/Contact";
+import Products from "@/components/HomePage/Products/Products";
 
 export default function Home() {
   return (
     <main>
-      <Contact />
+      <section className="h-screen">Hero</section>
+
+      <Products />
     </main>
   );
 }

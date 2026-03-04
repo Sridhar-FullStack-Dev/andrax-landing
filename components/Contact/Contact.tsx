@@ -34,7 +34,7 @@ export default function Contact() {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 70%",
-          once: true,
+          toggleActions: "play reverse play reverse",
         },
       });
 
@@ -47,7 +47,7 @@ export default function Contact() {
         scrollTrigger: {
           trigger: ".contact-form-field",
           start: "top 85%",
-          once: true,
+          toggleActions: "play reverse play reverse",
         },
       });
 
@@ -60,15 +60,15 @@ export default function Contact() {
         scrollTrigger: {
           trigger: ".contact-info-item",
           start: "top 85%",
-          once: true,
+          toggleActions: "play reverse play reverse",
         },
       });
     },
-    { scope: sectionRef }
+    { scope: sectionRef },
   );
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormState({ ...formState, [e.target.name]: e.target.value });
   };
@@ -121,10 +121,7 @@ export default function Contact() {
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
           {/* Form */}
           <div className="lg:w-3/5">
-            <form
-              onSubmit={(e) => e.preventDefault()}
-              className="space-y-6"
-            >
+            <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="contact-form-field">
                   <label

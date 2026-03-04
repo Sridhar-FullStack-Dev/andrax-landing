@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import SmoothScroll from "@/components/SmoothScroll/SmoothScroll";
@@ -74,6 +75,7 @@ export default function RootLayout({
           <div className="relative z-10 bg-off-white mb-100 shadow-b">
             <Navbar />
             {children}
+            <Contact />
           </div>
           <Footer />
         </SmoothScroll>
