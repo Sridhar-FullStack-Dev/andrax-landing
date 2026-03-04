@@ -145,7 +145,7 @@ export default function Products() {
       <div
         ref={gridRef}
         key={activeTab}
-        className="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
+        className="mt-8 grid grid-cols-4 gap-8"
       >
         {products[activeTab].items?.map((item, idx) => (
           <div
