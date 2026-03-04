@@ -1,6 +1,7 @@
-
 export default function Products() {
   return (
-    <div>Products</div>
-  )
+    <section className="bg-white py-20 px-6">
+      <div className="">Coir Products</div>
+    </section>
+  );
 }
