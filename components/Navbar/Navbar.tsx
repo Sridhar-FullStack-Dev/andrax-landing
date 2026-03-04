@@ -157,6 +157,7 @@ export default function Navbar() {
             src={"/logo-green.png"}
             width={200}
             height={200}
+            priority
             alt="Andrax Pvt Ltd."
             className="size-15 object-contain"
           />
@@ -281,7 +282,7 @@ export default function Navbar() {
             <div className="grid grid-cols-4 gap-6">
               <ProductCard
                 name="Coir Mulch Mats"
-                imageUrl="https://images.pexels.com/photos/27596374/pexels-photo-27596374.jpeg"
+                imageUrl="https://lh3.googleusercontent.com/rd-d/ALs6j_Fk1Tn39yXweu4EKazjVgiUQF4_qFK-wtE5B8Bop-yeccyeqYxq00f2BPWo2w0fzdaEPuUkBx28zpfo3Oo2he1N0ByKEt_S189zB_WtQiGjP69lmeLD256B7EKupZFMlZS28NfJ4kkOWmDGN5VdTFbQqQaI5WjXFERvN-Ua_eMilmjmTIk7z7iL3A94KJTPXvYz3LrL29TVrnM4OhoE4ryZ44ywCmJO6nO0wDsFX3aoGrDESK4exdF6AUBuBGR9bX22Yp8W7Jrqvl1zBffxlztIqSu9IUzg4d0EDBJle8d2kp3tWQsUuYYY8yOgtN3fHeNsJpuGevnbdOqtZfM8lvCy0whgV2iQQJNBJq0M9gTnNtAh5OslHD6o0woblEdNhKF2hfI-iqaGnSlm0dbEJ-YD5s_cXqIpKBq8g8KOAWOUjCbKIrJH3Nx9Gzb_apHY7yczZY1X6JHx_L37p3pbZZH_85oys75bGbI04mBly2ojnhJHdPq7Ah7UQ7CdDd6qIYxPqfFkVPcLxG0ARnETAKJDpVSCYuxluI1NSIEubOAYWRavkRb79JOKYjeGHV9wFjhaMUZNrx2N09nrInmR3YfjRr_kCfxUea3jlp0l0CQxZWHTbuPzg8t8qP8crfh3iLAOwCMADGdHpbvlE-uvoTUOI1L7LZ7TG4qdoeK1svKGZRiS0DG6A1uxcYhiy_pDu-7qEEx5fUhxG9LNKVezaqCplEqNRNpe6mi2OqmYDW9VEbfNYN4F62Yse0Nv-qOBsvr6KC6mTv_KKhPb7PGDtPRkMvqbZJgMT60mnmr-BRUlChnGH1mLsiqG29xBM9sbvAHgOSbxvPRnlhxF2ctWb9V0L5jUbp9-I0YU7qYF47MFqfL3LmcryGv4mg1kCSqC37RRbxuaN3GUzGrejJsC30xSAxFBEQWQLSH-8uHO-1MMpGAKWn-mHPO-zivUTjZF7P7HpRYhbs5V4EVg9tATykNOweVDdVT9DxTY2FPKPsoP3bwiAhKWMH6QqoNMlRT4oFNzj2EJ4gW5UwPiSzwUltttviCPJvTyL7OXNE0dLHegL6LsVBURJAzG3ezP1yovLUnktNHe_L4_GaDze3kzuNOzst51NUwF1UzhB1XKT3Kov7k6FkCCDc_KrBcRm5K1I5bdoRdEo36ZMBpDfPBOmb0=w3010-h2084?auditContext=prefetch"
               />
               <ProductCard
                 name="Fresh Fruits & Vegetables"
@@ -330,6 +331,7 @@ function ProductCard({ name, imageUrl }: { name: string; imageUrl: string }) {
         alt={name}
         height={512}
         width={512}
+        priority
         className="size-full object-cover"
       />
       <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-100 transition-opacity" />
