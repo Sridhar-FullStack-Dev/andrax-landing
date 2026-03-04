@@ -1,9 +1,63 @@
+"use client";
+
 import Grainient from "@/components/Grainient";
 import { archivo, jetbrainsMono } from "@/lib/fonts";
+import Image from "next/image";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 export default function About() {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const borderContainerRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
+
+  useGSAP(
+    () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 50%",
+          end: "center center",
+          scrub: true,
+          once: true,
+        },
+      });
+
+      tl.fromTo(
+        imageRef.current,
+        {
+          clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+        },
+        {
+          clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+          ease: "power1.inOut",
+        },
+      ).fromTo(
+        borderContainerRef.current,
+        { borderColor: "transparent" },
+        {
+          borderColor: "var(--color-secondary-accent)",
+          duration: 0.1,
+          ease: "power1.inOut",
+        },
+        ">",
+      );
+    },
+    { scope: sectionRef },
+  );
+
   return (
-    <section id="about" className="relative py-20 px-8 overflow-hidden">
+    <section
+      id="about"
+      ref={sectionRef}
+      className="relative py-20 px-8 overflow-hidden"
+    >
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <Grainient
@@ -42,6 +96,26 @@ export default function About() {
             natural products that meet international standards while supporting
             eco-friendly agriculture and responsible sourcing practices.
           </p>
+        </div>
+
+        <div
+          ref={borderContainerRef}
+          className="border p-6 rounded-tr-[230px] rounded-bl-[230px] overflow-hidden transition-colors"
+          style={
+            { "--color-secondary-accent": "#CFA849" } as React.CSSProperties
+          }
+        >
+          <Image
+            ref={imageRef}
+            src={
+              "https://images.pexels.com/photos/776615/pexels-photo-776615.jpeg"
+            }
+            alt="about us"
+            width={1200}
+            height={512}
+            priority
+            className="w-full h-120 object-cover rounded-tr-[210px] rounded-bl-[210px] grayscale opacity-80 hover:opacity-100 transition duration-500"
+          />
         </div>
       </div>
     </section>

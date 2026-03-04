@@ -14,8 +14,9 @@ import { IoClose } from "react-icons/io5";
 import { GoArrowUpRight } from "react-icons/go";
 import { useLenis } from "lenis/react";
 
-gsap.registerPlugin(ScrollTrigger);
-
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 export default function Navbar() {
   const lenis = useLenis();
   const navRef = useRef<HTMLElement>(null);

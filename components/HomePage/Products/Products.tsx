@@ -3,19 +3,20 @@ import { products } from "@/lib/const";
 import { archivo, jetbrainsMono } from "@/lib/fonts";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
-gsap.registerPlugin(useGSAP);
-
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 export default function Products() {
   const [activeTab, setActiveTab] = useState(0);
   const indicatorRef = useRef<HTMLDivElement>(null);
   const tabsRef = useRef<(HTMLDivElement | null)[]>([]);
   const gridRef = useRef<HTMLDivElement>(null);
 
-  // Update animated indicator position and size
   useGSAP(() => {
     const activeElement = tabsRef.current[activeTab];
     if (activeElement && indicatorRef.current) {
@@ -30,7 +31,6 @@ export default function Products() {
     }
   }, [activeTab]);
 
-  // Handle window resize to reposition indicator smoothly
   useEffect(() => {
     const handleResize = () => {
       const activeElement = tabsRef.current[activeTab];
@@ -47,7 +47,6 @@ export default function Products() {
     return () => window.removeEventListener("resize", handleResize);
   }, [activeTab]);
 
-  // Handle Image Grid Animations on Tab Change
   useGSAP(() => {
     if (gridRef.current) {
       const images = gsap.utils.toArray(
@@ -57,19 +56,16 @@ export default function Products() {
         gridRef.current.querySelectorAll(".product-text"),
       );
 
-      // Kill any ongoing animations to prevent clipping glitches
       gsap.killTweensOf([...images, ...texts]);
 
       const tl = gsap.timeline();
 
-      // Set initial states for clip-path and text
       gsap.set(images, {
         clipPath: "inset(100% 0% 0% 0%)",
         scale: 0.95,
       });
       gsap.set(texts, { opacity: 0, y: 15 });
 
-      // Build the stagger reveal timeline
       tl.to(images, {
         clipPath: "inset(0% 0% 0% 0%)",
         scale: 1,
@@ -170,7 +166,7 @@ export default function Products() {
                     {item.name}
                   </div>
 
-                  <div className="size-11 flex justify-center items-center gap-2 product-text text-left text-primary-main uppercase font-semibold text-lg bg-white">
+                  <div className="size-10.5 flex justify-center items-center gap-2 product-text text-left text-primary-main uppercase font-semibold text-lg bg-white">
                     <GoArrowUpRight className="size-6" />
                   </div>
                 </div>

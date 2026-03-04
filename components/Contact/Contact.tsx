@@ -13,8 +13,9 @@ import {
   IoSend,
 } from "react-icons/io5";
 
-gsap.registerPlugin(ScrollTrigger);
-
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null);
   const [formState, setFormState] = useState({
