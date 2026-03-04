@@ -1,5 +1,5 @@
 "use client";
-import { lexendDeca } from "@/lib/fonts";
+import { jetbrainsMono, lexendDeca } from "@/lib/fonts";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -11,10 +11,13 @@ import RollingText from "../ui/rolling-text";
 import UnderlineAnimText from "../ui/underline-anim";
 import TopBanner from "./TopBanner";
 import { IoClose } from "react-icons/io5";
+import { GoArrowUpRight } from "react-icons/go";
+import { useLenis } from "lenis/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Navbar() {
+  const lenis = useLenis();
   const navRef = useRef<HTMLElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const lineRef = useRef<HTMLDivElement>(null);
@@ -265,7 +268,10 @@ export default function Navbar() {
               </div>
 
               <div className="flex justify-end items-center gap-4">
-                <button className="text-lg px-4 py-2 flex items-center justify-center gap-1 bg-white border border-primary-main uppercase text-primary-main cursor-pointer w-fit">
+                <button
+                  onClick={() => lenis?.scrollTo("#products")}
+                  className="text-lg px-4 py-2 flex items-center justify-center gap-1 bg-white border border-primary-main uppercase text-primary-main cursor-pointer w-fit"
+                >
                   Show All Products
                 </button>
 
@@ -282,19 +288,19 @@ export default function Navbar() {
             <div className="grid grid-cols-4 gap-6">
               <ProductCard
                 name="Coir Mulch Mats"
-                imageUrl="https://lh3.googleusercontent.com/rd-d/ALs6j_Fk1Tn39yXweu4EKazjVgiUQF4_qFK-wtE5B8Bop-yeccyeqYxq00f2BPWo2w0fzdaEPuUkBx28zpfo3Oo2he1N0ByKEt_S189zB_WtQiGjP69lmeLD256B7EKupZFMlZS28NfJ4kkOWmDGN5VdTFbQqQaI5WjXFERvN-Ua_eMilmjmTIk7z7iL3A94KJTPXvYz3LrL29TVrnM4OhoE4ryZ44ywCmJO6nO0wDsFX3aoGrDESK4exdF6AUBuBGR9bX22Yp8W7Jrqvl1zBffxlztIqSu9IUzg4d0EDBJle8d2kp3tWQsUuYYY8yOgtN3fHeNsJpuGevnbdOqtZfM8lvCy0whgV2iQQJNBJq0M9gTnNtAh5OslHD6o0woblEdNhKF2hfI-iqaGnSlm0dbEJ-YD5s_cXqIpKBq8g8KOAWOUjCbKIrJH3Nx9Gzb_apHY7yczZY1X6JHx_L37p3pbZZH_85oys75bGbI04mBly2ojnhJHdPq7Ah7UQ7CdDd6qIYxPqfFkVPcLxG0ARnETAKJDpVSCYuxluI1NSIEubOAYWRavkRb79JOKYjeGHV9wFjhaMUZNrx2N09nrInmR3YfjRr_kCfxUea3jlp0l0CQxZWHTbuPzg8t8qP8crfh3iLAOwCMADGdHpbvlE-uvoTUOI1L7LZ7TG4qdoeK1svKGZRiS0DG6A1uxcYhiy_pDu-7qEEx5fUhxG9LNKVezaqCplEqNRNpe6mi2OqmYDW9VEbfNYN4F62Yse0Nv-qOBsvr6KC6mTv_KKhPb7PGDtPRkMvqbZJgMT60mnmr-BRUlChnGH1mLsiqG29xBM9sbvAHgOSbxvPRnlhxF2ctWb9V0L5jUbp9-I0YU7qYF47MFqfL3LmcryGv4mg1kCSqC37RRbxuaN3GUzGrejJsC30xSAxFBEQWQLSH-8uHO-1MMpGAKWn-mHPO-zivUTjZF7P7HpRYhbs5V4EVg9tATykNOweVDdVT9DxTY2FPKPsoP3bwiAhKWMH6QqoNMlRT4oFNzj2EJ4gW5UwPiSzwUltttviCPJvTyL7OXNE0dLHegL6LsVBURJAzG3ezP1yovLUnktNHe_L4_GaDze3kzuNOzst51NUwF1UzhB1XKT3Kov7k6FkCCDc_KrBcRm5K1I5bdoRdEo36ZMBpDfPBOmb0=w3010-h2084?auditContext=prefetch"
+                imageUrl="/products/andrax-coir-mulch-mat.png"
               />
               <ProductCard
                 name="Fresh Fruits & Vegetables"
-                imageUrl="https://images.pexels.com/photos/33702958/pexels-photo-33702958.jpeg"
+                imageUrl="/products/andrax-strawberry.png"
               />
               <ProductCard
                 name="Chemical Products"
-                imageUrl="https://images.pexels.com/photos/7256839/pexels-photo-7256839.jpeg"
+                imageUrl="/products/andrax-ethanol-alcohol.png"
               />
               <ProductCard
                 name="Petroleum Jelly"
-                imageUrl="https://images.pexels.com/photos/5450888/pexels-photo-5450888.jpeg"
+                imageUrl="/products/andrax-petroleum-jelly.png"
               />
             </div>
           </div>
@@ -334,10 +340,20 @@ function ProductCard({ name, imageUrl }: { name: string; imageUrl: string }) {
         priority
         className="size-full object-cover"
       />
-      <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-100 transition-opacity" />
-      <p className="absolute bottom-6 left-6 text-white font-medium text-lg tracking-wide">
-        {name}
-      </p>
+      <div className="absolute inset-0 bg-linear-to-t from-black/50 via-black/20 to-transparent z-10 transition-opacity duration-500 group-hover:opacity-90" />
+
+      <div className="absolute inset-0 flex flex-col justify-end p-2 z-20">
+        <div className="flex justify-between items-center">
+          <p
+            className={`flex justify-start items-center gap-2 product-text text-left text-white uppercase font-semibold text-lg ${jetbrainsMono.className} w-fit px-4 py-2`}
+          >
+            {name}
+          </p>
+          <div className="size-11 flex justify-center items-center gap-2 product-text text-left text-primary-main uppercase font-semibold text-lg bg-white">
+            <GoArrowUpRight className="size-6" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

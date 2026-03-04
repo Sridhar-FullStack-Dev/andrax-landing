@@ -91,7 +91,7 @@ export default function Products() {
   }, [activeTab]);
 
   return (
-    <section className="bg-white py-20 px-6 overflow-hidden">
+    <section id="products" className="bg-white py-20 px-6 overflow-hidden">
       <div className="products-heading flex justify-between items-end">
         <div>
           <span
@@ -160,7 +160,7 @@ export default function Products() {
                 width={512}
                 className="size-full object-cover z-0"
               />
-              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent z-10 transition-opacity duration-500 group-hover:opacity-90" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/50 via-black/20 to-transparent z-10 transition-opacity duration-500 group-hover:opacity-90" />
 
               <div className="absolute inset-0 flex flex-col justify-end p-6 z-20">
                 <div className="flex justify-between items-center">
