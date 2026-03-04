@@ -273,8 +273,8 @@ export default function Navbar() {
                   aria-label="Close menu"
                   className="text-lg px-4 py-2 flex items-center justify-center gap-1 bg-primary-main border border-primary-main uppercase text-off-white-2 cursor-pointer w-fit"
                 >
-                  <IoClose className="size-6" />
                   <RollingText text="close" />
+                  <IoClose className="size-6" />
                 </button>
               </div>
             </div>
