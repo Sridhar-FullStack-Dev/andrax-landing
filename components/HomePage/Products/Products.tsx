@@ -1,17 +1,11 @@
 "use client";
-
+import { products } from "@/lib/const";
 import { archivo, jetbrainsMono } from "@/lib/fonts";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { AiOutlineExperiment } from "react-icons/ai";
-import { FaCottonBureau } from "react-icons/fa";
-import { GiCoconuts } from "react-icons/gi";
-import { LuNut } from "react-icons/lu";
-import { MdOutlineWaterDrop } from "react-icons/md";
-import { PiCarrot, PiCowLight, PiFlowerLotus } from "react-icons/pi";
-import { TfiArrowTopRight } from "react-icons/tfi";
+import { GoArrowUpRight } from "react-icons/go";
 
 gsap.registerPlugin(useGSAP);
 
@@ -114,7 +108,6 @@ export default function Products() {
       </div>
 
       <div className="relative flex justify-start items-center gap-2 my-6 z-10 w-full overflow-x-auto no-scrollbar pb-2">
-        {/* Animated GSAP Background Indicator */}
         <div
           ref={indicatorRef}
           className="absolute left-0 top-0 bg-primary-main rounded-full pointer-events-none z-0"
@@ -151,13 +144,13 @@ export default function Products() {
 
       <div
         ref={gridRef}
-        key={activeTab} // Using key forces React to fully remount the grid on tab change to reset animations
+        key={activeTab}
         className="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
       >
         {products[activeTab].items?.map((item, idx) => (
           <div
             key={idx}
-            className="flex flex-col items-center group cursor-pointer w-full"
+            className="flex flex-col items-center group cursor-pointer w-full overflow-hidden"
           >
             <div className="product-image-wrap w-full aspect-3/4 bg-gray-50 flex items-center justify-center relative shadow-sm border border-gray-100 overflow-hidden rounded-none">
               <Image
@@ -175,8 +168,10 @@ export default function Products() {
                     className={`flex justify-start items-center gap-2 product-text text-left text-secondary-accent uppercase font-semibold text-lg ${jetbrainsMono.className} bg-primary-main w-fit px-4 py-2`}
                   >
                     {item.name}
+                  </div>
 
-                    <TfiArrowTopRight />
+                  <div className="size-11 flex justify-center items-center gap-2 product-text text-left text-primary-main uppercase font-semibold text-lg bg-white">
+                    <GoArrowUpRight className="size-6" />
                   </div>
                 </div>
               </div>
@@ -187,165 +182,3 @@ export default function Products() {
     </section>
   );
 }
-
-const products = [
-  {
-    name: "Coir Products",
-    icon: <GiCoconuts className="size-5" />,
-    items: [
-      {
-        name: "Coir Mulch Mats",
-        image: "/products/andrax-coir-mulch-mat.png",
-      },
-      {
-        name: "Coconut Shell Biochar",
-        image: "/products/andrax-coconut-shell-biochar.png",
-      },
-      {
-        name: "Coir Pith",
-        image: "/products/andrax-coir-pith.png",
-      },
-      {
-        name: "Coco Peat",
-        image: "/products/andrax-coco-peat.png",
-      },
-      {
-        name: "Coconut milk",
-        image: "/products/andrax-coconut-milk.png",
-      },
-      {
-        name: "Desiccated Coconut Powder",
-        image: "/products/andrax-desiccated-coconut-powder.png",
-      },
-      {
-        name: "Coconut Chips",
-        image: "/products/andrax-coconut-chips.png",
-      },
-      {
-        name: "Coco Husk Chips",
-        image: "/products/andrax-coco-husk-chips.png",
-      },
-      {
-        name: "Coir Mats",
-        image: "/products/andrax-coir-mats.png",
-      },
-    ],
-  },
-  {
-    name: "Chemical Products",
-    icon: <AiOutlineExperiment className="size-5" />,
-    items: [
-      {
-        name: "Sodium Carbonate",
-        image: "/products/andrax-sodium-carbonate.png",
-      },
-      {
-        name: "Sulphuric Acid",
-        image: "/products/andrax-sulphuric-acid.png",
-      },
-      {
-        name: "Caustic Soda",
-        image: "/products/andrax-caustic-soda.png",
-      },
-      {
-        name: "Potassium",
-        image: "/products/andrax-potassium.png",
-      },
-      {
-        name: "Potassium Sulphate",
-        image: "/products/andrax-potassium-sulphate.png",
-      },
-      {
-        name: "Ammonium",
-        image: "/products/andrax-ammonium.png",
-      },
-      {
-        name: "Ethanol alcohol",
-        image: "/products/andrax-ethanol-alcohol.png",
-      },
-    ],
-  },
-  {
-    name: "Fruits & Vegetables",
-    icon: <PiCarrot className="size-5" />,
-    items: [
-      {
-        name: "Apple",
-        image: "/products/andrax-apple.png",
-      },
-      { name: "Strawberry", image: "" },
-      { name: "Pumpkin", image: "" },
-      { name: "Green Beans", image: "" },
-      { name: "Onion big", image: "" },
-      { name: "Small onion", image: "" },
-      { name: "Broccoli", image: "" },
-      { name: "Drumstick", image: "" },
-    ],
-  },
-  {
-    name: "Imported Nuts",
-    icon: <LuNut className="size-5" />,
-    items: [
-      { name: "Cashewnut", image: "" },
-      { name: "Dates", image: "" },
-      { name: "Pistachio", image: "" },
-    ],
-  },
-  {
-    name: "Scrap Products",
-    icon: <FaCottonBureau className="size-5" />,
-    items: [
-      { name: "Copper scrap", image: "" },
-      { name: "Aluminum scrap", image: "" },
-      { name: "Plastic granules", image: "" },
-      { name: "Cotton box", image: "" },
-    ],
-  },
-  {
-    name: "Animal Feeds",
-    icon: <PiCowLight className="size-5" />,
-    items: [
-      { name: "soyabean", image: "" },
-      { name: "corn", image: "" },
-      { name: "Alfalfa Hay", image: "" },
-    ],
-  },
-  {
-    name: "Plants & Nursing",
-    icon: <PiFlowerLotus className="size-5" />,
-    items: [
-      {
-        name: "Coconut Seedlings (Tall / Dwarf / Hybrid)",
-        image: "/products/andrax-coconut-seedlings.png",
-      },
-      {
-        name: "Tissue Culture Plants",
-        image: "/products/andrax-tissue-culture-plants.png",
-      },
-      { name: "Seed Nuts", image: "" },
-      { name: "Nursery Polybag Plants", image: "" },
-    ],
-  },
-  {
-    name: "Petroleum Products",
-    icon: <MdOutlineWaterDrop className="size-5" />,
-    items: [
-      {
-        name: "Petroleum Jelly",
-        image: "/products/andrax-petroleum-jelly.png",
-      },
-      {
-        name: "Synthetic Fibers (Polyester, Nylon)",
-        image: "/products/andrax-synthetic-fibers.png",
-      },
-      {
-        name: "Paraffin Wax (Candles)",
-        image: "/products/andrax-paraffin-wax.png",
-      },
-      {
-        name: "Detergent Raw Materials",
-        image: "/products/andrax-detergent-raw-materials.png",
-      },
-    ],
-  },
-];
