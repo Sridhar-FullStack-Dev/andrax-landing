@@ -88,7 +88,7 @@ export default function Products() {
 
   return (
     <section id="products" className="bg-white py-20 px-8 overflow-hidden">
-      <div className="products-heading flex justify-between items-end">
+      <div className="products-heading flex items-center justify-between">
         <div>
           <span
             className={`text-accent-main text-xs uppercase tracking-[0.3em] mb-3 block ${jetbrainsMono.className}`}
@@ -101,6 +101,8 @@ export default function Products() {
             Our Products
           </h2>
         </div>
+
+        <div>ddfdf</div>
       </div>
 
       <div className="relative flex justify-start items-center gap-2 my-6 z-10 w-full overflow-x-auto no-scrollbar pb-2">
@@ -154,6 +156,7 @@ export default function Products() {
                 alt={item.name}
                 height={512}
                 width={512}
+                priority
                 className="size-full object-cover z-0"
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/50 via-black/20 to-transparent z-10 transition-opacity duration-500 group-hover:opacity-90" />

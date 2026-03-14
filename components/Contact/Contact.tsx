@@ -1,72 +1,22 @@
 "use client";
 import { archivo, jetbrainsMono } from "@/lib/fonts";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef, useState } from "react";
-import Grainient from "../Grainient";
+import { useState } from "react";
 import {
-  IoMail,
   IoCall,
   IoLocation,
   IoLogoWhatsapp,
+  IoMail,
   IoSend,
 } from "react-icons/io5";
+import Grainient from "../Grainient";
 
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
-}
 export default function Contact() {
-  const sectionRef = useRef<HTMLElement>(null);
   const [formState, setFormState] = useState({
     name: "",
     email: "",
     country: "",
     message: "",
   });
-
-  useGSAP(
-    () => {
-      gsap.from(".contact-heading", {
-        y: 60,
-        opacity: 0,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 70%",
-          toggleActions: "play reverse play reverse",
-        },
-      });
-
-      gsap.from(".contact-form-field", {
-        y: 40,
-        opacity: 0,
-        duration: 0.6,
-        stagger: 0.1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".contact-form-field",
-          start: "top 85%",
-          toggleActions: "play reverse play reverse",
-        },
-      });
-
-      gsap.from(".contact-info-item", {
-        x: 40,
-        opacity: 0,
-        duration: 0.7,
-        stagger: 0.12,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".contact-info-item",
-          start: "top 85%",
-          toggleActions: "play reverse play reverse",
-        },
-      });
-    },
-    { scope: sectionRef },
-  );
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -75,11 +25,7 @@ export default function Contact() {
   };
 
   return (
-    <section
-      ref={sectionRef}
-      id="contact"
-      className="relative py-32 px-8 overflow-hidden"
-    >
+    <section id="contact" className="relative py-32 px-8 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <Grainient
@@ -98,7 +44,7 @@ export default function Contact() {
 
       <div className="relative z-10">
         {/* Heading */}
-        <div className="contact-heading mb-20">
+        <div className="mb-20">
           <span
             className={`text-secondary-accent text-xs uppercase tracking-[0.3em] mb-3 block ${jetbrainsMono.className}`}
           >
@@ -124,7 +70,7 @@ export default function Contact() {
           <div className="lg:w-3/5">
             <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="contact-form-field">
+                <div>
                   <label
                     className={`text-off-white/50 text-xs uppercase tracking-widest mb-2 block ${jetbrainsMono.className}`}
                   >
@@ -139,7 +85,7 @@ export default function Contact() {
                     placeholder="John Doe"
                   />
                 </div>
-                <div className="contact-form-field">
+                <div>
                   <label
                     className={`text-off-white/50 text-xs uppercase tracking-widest mb-2 block ${jetbrainsMono.className}`}
                   >
@@ -156,7 +102,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="contact-form-field">
+              <div>
                 <label
                   className={`text-off-white/50 text-xs uppercase tracking-widest mb-2 block ${jetbrainsMono.className}`}
                 >
@@ -172,7 +118,7 @@ export default function Contact() {
                 />
               </div>
 
-              <div className="contact-form-field">
+              <div>
                 <label
                   className={`text-off-white/50 text-xs uppercase tracking-widest mb-2 block ${jetbrainsMono.className}`}
                 >
@@ -190,7 +136,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className={`contact-form-field group flex items-center gap-3 px-8 py-4 bg-secondary-accent text-primary-main uppercase text-sm font-bold tracking-widest cursor-pointer transition-all duration-500 hover:bg-accent-main mt-4 ${archivo.className}`}
+                className={`group flex items-center gap-3 px-8 py-4 bg-secondary-accent text-primary-main uppercase text-sm font-bold tracking-widest cursor-pointer transition-all duration-500 hover:bg-accent-main mt-4 ${archivo.className}`}
               >
                 Send Message
                 <IoSend className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
