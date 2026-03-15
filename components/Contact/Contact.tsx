@@ -1,14 +1,11 @@
 "use client";
 import { archivo, jetbrainsMono } from "@/lib/fonts";
-import { useState, useRef } from "react";
-import { LuLeaf } from "react-icons/lu";
-import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef, useState } from "react";
+import { RiSendPlane2Line } from "react-icons/ri";
 import Grainient from "../Grainient";
 import { Button } from "../ui/button";
-import { contactInfo } from "@/lib/const/contacts";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Contact() {
   const [formState, setFormState] = useState({
@@ -37,7 +34,7 @@ export default function Contact() {
         ease: "none",
         duration: 140,
         repeat: -1,
-      }
+      },
     );
   });
 
@@ -48,10 +45,7 @@ export default function Contact() {
   };
 
   return (
-    <section
-      id="contact"
-      className="relative overflow-hidden h-300"
-    >
+    <section id="contact" className="relative overflow-hidden h-250">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <Grainient
@@ -148,25 +142,31 @@ export default function Contact() {
               />
             </div>
 
-            <div>
-              <label
-                className={`text-off-white/50 text-xs uppercase tracking-widest mb-2 block ${archivo.className}`}
-              >
-                Message
-              </label>
-              <textarea
-                name="message"
-                value={formState.message}
-                onChange={handleChange}
-                rows={4}
-                autoComplete="off"
-                className={`w-full bg-transparent border-b-2 border-off-white/20 text-off-white py-3 text-base focus:border-secondary-accent focus:outline-none transition-colors duration-300 resize-none placeholder:text-off-white/20 ${archivo.className}`}
-                placeholder="Tell us about your requirements..."
-              />
-            </div>
+            <div className="flex justify-between gap-8">
+              <div className="w-[80%]">
+                <label
+                  className={`text-off-white/50 text-xs uppercase tracking-widest mb-2 block ${archivo.className}`}
+                >
+                  Message
+                </label>
+                <textarea
+                  name="message"
+                  value={formState.message}
+                  onChange={handleChange}
+                  rows={4}
+                  autoComplete="off"
+                  className={`w-full bg-transparent border-b-2 border-off-white/20 text-off-white py-3 text-base focus:border-secondary-accent focus:outline-none transition-colors duration-300 resize-none placeholder:text-off-white/20 ${archivo.className}`}
+                  placeholder="Tell us about your requirements..."
+                />
+              </div>
 
-            <div className="flex justify-end items-center mt-4">
-              
+              <Button
+                type="submit"
+                className={`flex items-center gap-3 px-8 h-35 bg-secondary-accent text-primary-main uppercase text-base font-bold tracking-widest cursor-pointer transition-all duration-500 hover:bg-accent-main ${archivo.className} w-[20%]`}
+              >
+                Send Message <br /> to us 
+                
+              </Button>
             </div>
           </form>
         </div>
