@@ -16,7 +16,6 @@ export default function ProductGallery({
 
   useGSAP(
     () => {
-      const wrappers = gsap.utils.toArray(".anim-image-wrap");
       const images = gsap.utils.toArray(".anim-image");
 
       gsap.fromTo(

@@ -67,7 +67,7 @@ export default function Contact() {
             <span
               className={`text-secondary-accent text-xs uppercase tracking-[0.3em] mb-3 block ${jetbrainsMono.className}`}
             >
-              Let's Book
+              Let&apos;s Book
             </span>
             <h2
               className={`text-off-white text-4xl md:text-5xl lg:text-6xl font-bold uppercase leading-none mb-4 ${archivo.className}`}
