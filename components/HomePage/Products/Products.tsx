@@ -14,7 +14,7 @@ import { slugify } from "@/lib/utils";
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
-export default function Products() {
+export default function Products({ showAll = false }: { showAll?: boolean }) {
   const [activeTab, setActiveTab] = useState(0);
   const indicatorRef = useRef<HTMLDivElement>(null);
   const tabsRef = useRef<(HTMLDivElement | null)[]>([]);
@@ -94,26 +94,32 @@ export default function Products() {
       <div className="products-heading flex items-center justify-between">
         <div>
           <span
-            className={`text-accent-main text-xs uppercase tracking-[0.3em] mb-3 block ${jetbrainsMono.className}`}
+            className={`text-primary-main text-xs uppercase tracking-[0.3em] mb-3 block ${jetbrainsMono.className}`}
           >
             What We Export
           </span>
           <h2
-            className={`text-primary-main text-4xl md:text-5xl lg:text-6xl font-bold uppercase leading-none ${archivo.className}`}
+            className={`text-accent-main text-4xl md:text-5xl lg:text-6xl font-bold uppercase leading-none mb-4 ${archivo.className}`}
           >
-            Our Products
+            Feature Related
+            <br />
+            <span className="text-primary-main italic">Products</span>
           </h2>
         </div>
 
-        <Button className="text-secondary-accent">
-          Explore All our products <GoArrowUpRight className="size-6" />
-        </Button>
+        {!showAll && (
+          <Link href="/products" passHref>
+            <Button className="text-secondary-accent">
+              Explore All our products <GoArrowUpRight className="size-6" />
+            </Button>
+          </Link>
+        )}
       </div>
 
       <div className="relative flex justify-start items-center gap-2 my-6 z-10 w-full overflow-x-auto no-scrollbar pb-2">
         <div
           ref={indicatorRef}
-          className="absolute left-0 top-0 bg-primary-main rounded-full pointer-events-none z-0"
+          className="absolute left-0 top-0 bg-primary-main pointer-events-none z-0"
           style={{ width: 0, height: 0 }}
         />
 
@@ -126,7 +132,7 @@ export default function Products() {
                 if (el) tabsRef.current[index] = el;
               }}
               onClick={() => setActiveTab(index)}
-              className={`relative shrink-0 cursor-pointer border rounded-full px-4 py-2 w-fit uppercase flex items-center gap-2 transition-colors duration-300 z-10 ${
+              className={`relative shrink-0 cursor-pointer border px-4 py-2 w-fit uppercase flex items-center gap-2 transition-colors duration-300 z-10 ${
                 archivo.className
               } ${
                 isActive
@@ -150,39 +156,41 @@ export default function Products() {
         key={activeTab}
         className="mt-8 grid grid-cols-4 gap-8"
       >
-        {products[activeTab].items?.slice(0, 8).map((item, idx) => (
-          <Link
-            href={`/products/${slugify(item.name)}`}
-            key={idx}
-            className="flex flex-col items-center group cursor-pointer w-full overflow-hidden"
-          >
-            <div className="product-image-wrap w-full aspect-3/4 bg-gray-50 flex items-center justify-center relative shadow-sm border border-gray-100 overflow-hidden rounded-none">
-              <Image
-                src={item.image}
-                alt={item.name}
-                height={512}
-                width={512}
-                priority
-                className="size-full object-cover z-0"
-              />
-              <div className="absolute inset-0 bg-linear-to-t from-black/50 via-black/20 to-transparent z-10 transition-opacity duration-500 group-hover:opacity-90" />
+        {products[activeTab].items
+          ?.slice(0, showAll ? undefined : 8)
+          .map((item, idx) => (
+            <Link
+              href={`/products/${slugify(item.name)}`}
+              key={idx}
+              className="flex flex-col items-center group cursor-pointer w-full overflow-hidden"
+            >
+              <div className="product-image-wrap w-full aspect-3/4 bg-gray-50 flex items-center justify-center relative shadow-sm border border-gray-100 overflow-hidden rounded-none">
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  height={512}
+                  width={512}
+                  priority
+                  className="size-full object-contain z-0"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-black/50 via-black/20 to-transparent z-10 transition-opacity duration-500 group-hover:opacity-90" />
 
-              <div className="absolute inset-0 flex flex-col justify-end p-6 z-20">
-                <div className="flex justify-between items-center">
-                  <div
-                    className={`flex justify-start items-center gap-2 product-text text-left text-secondary-accent uppercase font-semibold text-lg ${jetbrainsMono.className} bg-primary-main w-fit px-4 py-2`}
-                  >
-                    {item.name}
-                  </div>
+                <div className="absolute inset-0 flex flex-col justify-end p-6 z-20">
+                  <div className="flex justify-between items-center">
+                    <div
+                      className={`flex justify-start items-center gap-2 product-text text-left text-secondary-accent uppercase font-semibold text-lg ${jetbrainsMono.className} bg-primary-main w-fit px-4 py-2`}
+                    >
+                      {item.name}
+                    </div>
 
-                  <div className="size-10.5 flex justify-center items-center gap-2 product-text text-left text-primary-main uppercase font-semibold text-lg bg-white">
-                    <GoArrowUpRight className="size-6" />
+                    <div className="size-10.5 flex justify-center items-center gap-2 product-text text-left text-primary-main uppercase font-semibold text-lg bg-white">
+                      <GoArrowUpRight className="size-6" />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
       </div>
     </section>
   );
