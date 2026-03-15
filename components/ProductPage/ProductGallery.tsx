@@ -52,24 +52,14 @@ export default function ProductGallery({
 
   return (
     <div ref={containerRef} className="flex justify-center items-center gap-4">
-      <div className="anim-image-wrap border border-dotted p-6 rounded-tr-[230px] rounded-bl-[230px] overflow-hidden transition-colors border-primary-main">
+      <div className="anim-image-wrap border border-dotted p-5 overflow-hidden transition-colors border-secondary-accent">
         <Image
           src={productImage}
           alt={productName}
           width={512}
           height={512}
           priority
-          className="anim-image w-full h-120 object-cover rounded-tr-[210px] rounded-bl-[210px]"
-        />
-      </div>
-      <div className="anim-image-wrap border p-6 rounded-br-[230px] rounded-tl-[230px] overflow-hidden transition-colors border-primary-main">
-        <Image
-          src={productImage}
-          alt={productName}
-          width={512}
-          height={512}
-          priority
-          className="anim-image w-full h-120 object-cover rounded-br-[210px] rounded-tl-[210px]"
+          className="anim-image w-full h-120 object-cover "
         />
       </div>
     </div>

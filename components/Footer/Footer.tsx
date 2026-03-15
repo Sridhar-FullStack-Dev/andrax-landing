@@ -109,7 +109,7 @@ export default function Footer() {
 
           <Link href={"https://portfolio-sridhar.vercel.app/"} target="_blank">
             <RollingText
-              text="Website by Sridhar"
+              text="Designed by Sridhar"
               textClassName="opacity-50 mt-1"
             />
           </Link>

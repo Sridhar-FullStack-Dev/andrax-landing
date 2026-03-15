@@ -3,7 +3,6 @@ import { archivo, jetbrainsMono } from "@/lib/fonts";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef, useState } from "react";
-import { RiSendPlane2Line } from "react-icons/ri";
 import Grainient from "../Grainient";
 import { Button } from "../ui/button";
 
@@ -164,8 +163,7 @@ export default function Contact() {
                 type="submit"
                 className={`flex items-center gap-3 px-8 h-35 bg-secondary-accent text-primary-main uppercase text-base font-bold tracking-widest cursor-pointer transition-all duration-500 hover:bg-accent-main ${archivo.className} w-[20%]`}
               >
-                Send Message <br /> to us 
-                
+                Send Message <br /> to us
               </Button>
             </div>
           </form>

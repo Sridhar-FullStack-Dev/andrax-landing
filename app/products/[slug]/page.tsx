@@ -45,19 +45,19 @@ export default async function ProductPage({
           productImage={product.image}
         />
 
-        <div className="flex flex-col justify-center">
+        <div className="text-center mt-10">
           <div
             className={`text-accent-main text-xs uppercase tracking-[0.3em] mb-3 block ${jetbrainsMono.className}`}
           >
             {productCategory}
           </div>
           <h1
-            className={`text-primary-main text-4xl md:text-5xl lg:text-6xl font-bold uppercase leading-tight mb-6 ${archivo.className}`}
+            className={`text-primary-main text-4xl md:text-5xl lg:text-6xl font-bold uppercase leading-tight ${archivo.className}`}
           >
             {product.name}
           </h1>
 
-          <div className="prose prose-lg text-gray-600 mb-8 max-w-none">
+          <div className="prose prose-lg text-gray-600 mb-8 max-w-2xl">
             <p>
               Premium quality {product.name.toLowerCase()} sourced and exported
               by Andrax. We ensure the highest standards of quality control and
