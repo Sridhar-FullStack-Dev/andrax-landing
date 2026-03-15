@@ -47,7 +47,7 @@ export default async function ProductPage({
       .slice(0, 4) || [];
 
   return (
-    <main className="pt-32 pb-20 px-8 bg-white flex justify-center items-start">
+    <main className="pt-32 px-8 bg-white flex flex-col justify-center items-center">
       <div className="max-w-6xl w-full flex flex-col items-center">
         <ProductGallery
           productName={product.name}
@@ -75,7 +75,7 @@ export default async function ProductPage({
             <h2
               className={`text-2xl font-bold mb-4 uppercase ${archivo.className} text-primary-main`}
             >
-              Product Overview
+              1. Product Overview
             </h2>
             <p className="text-gray-700 mb-4 font-medium leading-relaxed">
               {product.overview?.description ||
@@ -105,13 +105,13 @@ export default async function ProductPage({
             <h2
               className={`text-2xl font-bold mb-6 uppercase ${archivo.className} text-primary-main`}
             >
-              Technical Specifications
+              2. Technical Specifications
             </h2>
-            <div className="overflow-x-auto rounded-xl border border-gray-200">
+            <div className="overflow-x-auto border border-primary-main">
               <table className="w-full border-collapse">
                 <tbody>
-                  <tr className="border-b border-gray-200">
-                    <td className="py-4 px-6 font-semibold bg-gray-50 border-r border-gray-200 w-1/3">
+                  <tr className="border-b border-primary-main">
+                    <td className="py-4 px-6 font-semibold bg-off-white border-r border-primary-main w-1/3">
                       Material
                     </td>
                     <td className="py-4 px-6 text-gray-700">
@@ -119,8 +119,8 @@ export default async function ProductPage({
                         "100% natural, premium grade organic material"}
                     </td>
                   </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="py-4 px-6 font-semibold bg-gray-50 border-r border-gray-200">
+                  <tr className="border-b border-primary-main">
+                    <td className="py-4 px-6 font-semibold bg-off-white border-r border-primary-main">
                       Shape / Format
                     </td>
                     <td className="py-4 px-6 text-gray-700">
@@ -128,8 +128,8 @@ export default async function ProductPage({
                         "Customizable (Discs, sheets, blocks, or granular on request)"}
                     </td>
                   </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="py-4 px-6 font-semibold bg-gray-50 border-r border-gray-200">
+                  <tr className="border-b border-primary-main">
+                    <td className="py-4 px-6 font-semibold bg-off-white border-r border-primary-main">
                       Dimensions
                     </td>
                     <td className="py-4 px-6 text-gray-700">
@@ -137,8 +137,8 @@ export default async function ProductPage({
                         "Variables sizes based on exact buyer requirements"}
                     </td>
                   </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="py-4 px-6 font-semibold bg-gray-50 border-r border-gray-200">
+                  <tr className="border-b border-primary-main">
+                    <td className="py-4 px-6 font-semibold bg-off-white border-r border-primary-main">
                       Color
                     </td>
                     <td className="py-4 px-6 text-gray-700">
@@ -146,7 +146,7 @@ export default async function ProductPage({
                     </td>
                   </tr>
                   <tr>
-                    <td className="py-4 px-6 font-semibold bg-gray-50 border-r border-gray-200">
+                    <td className="py-4 px-6 font-semibold bg-off-white border-r border-primary-main">
                       Biodegradable
                     </td>
                     <td className="py-4 px-6 font-medium text-green-700">
@@ -163,9 +163,9 @@ export default async function ProductPage({
             <h2
               className={`text-2xl font-bold mb-4 uppercase ${archivo.className} text-primary-main`}
             >
-              Export & Packaging Details
+              3. Export & Packaging Details
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700 bg-gray-50 p-6 rounded-2xl border border-gray-100">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-700 bg-off-white p-6 border border-gray-100">
               <div className="space-y-4">
                 <p>
                   <strong className="block text-primary-main mb-1">
@@ -212,7 +212,7 @@ export default async function ProductPage({
           </section>
 
           {/* 4. Quality, Compliance & Trust Signals */}
-          <section className="bg-primary-main/5 p-8 rounded-2xl border border-primary-main/10 relative overflow-hidden">
+          <section className="bg-primary-main/5 p-8 border border-primary-main/10 relative overflow-hidden">
             <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
               <svg
                 width="120"
@@ -226,7 +226,7 @@ export default async function ProductPage({
             <h2
               className={`text-2xl font-bold mb-6 uppercase ${archivo.className} text-primary-main`}
             >
-              Quality, Compliance & Assurance
+              4. Quality, Compliance & Assurance
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-700">
               <div>
@@ -269,13 +269,13 @@ export default async function ProductPage({
           </section>
 
           {/* 5. Conversion / Bulk Orders Block */}
-          <section className="bg-primary-main text-white p-8 md:p-10 rounded-3xl mt-4 shadow-xl">
+          <section className="bg-primary-main text-white p-8 md:p-10 mt-4 shadow-xl">
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-10">
               <div className="lg:max-w-md">
                 <h2
                   className={`text-3xl font-bold mb-3 uppercase ${archivo.className} text-secondary-accent`}
                 >
-                  For Bulk Orders & Importers
+                  5. For Bulk Orders & Importers
                 </h2>
                 <p className="text-white/80 text-lg leading-relaxed mb-6">
                   Ready to upgrade your supply chain? We cater strictly to
@@ -290,7 +290,7 @@ export default async function ProductPage({
                 </Link>
               </div>
 
-              <div className="w-full lg:w-auto flex-1 bg-white/5 rounded-2xl p-6 border border-white/10">
+              <div className="w-full lg:w-auto flex-1 bg-white/5 p-6 border border-white/10">
                 <h3
                   className={`text-xl font-bold mb-4 uppercase ${archivo.className} text-white`}
                 >
@@ -336,7 +336,7 @@ export default async function ProductPage({
               <p className="text-sm text-white/60">
                 Need more technical details before ordering?
               </p>
-              <button className="px-6 py-2 bg-transparent border border-white/30 text-white hover:bg-white/10 transition-colors uppercase font-medium text-xs tracking-wider flex items-center justify-center gap-2 rounded-full cursor-pointer">
+              <button className="px-6 py-2 bg-transparent border border-white/30 text-white hover:bg-white/10 transition-colors uppercase font-medium text-xs tracking-wider flex items-center justify-center gap-2 cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
@@ -356,10 +356,10 @@ export default async function ProductPage({
               </button>
             </div>
           </section>
-
-          <RelatedProducts relatedProducts={relatedProducts} />
         </div>
       </div>
+
+      <RelatedProducts relatedProducts={relatedProducts} />
     </main>
   );
 }
