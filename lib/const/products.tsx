@@ -82,11 +82,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -135,11 +135,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -188,11 +188,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -241,11 +241,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -294,11 +294,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -347,11 +347,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -400,11 +400,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -453,11 +453,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -506,11 +506,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -559,11 +559,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -612,11 +612,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -665,11 +665,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -719,11 +719,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -772,11 +772,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -826,11 +826,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -879,11 +879,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -932,11 +932,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -985,11 +985,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1039,11 +1039,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1092,11 +1092,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1151,11 +1151,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1204,11 +1204,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1257,11 +1257,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1310,11 +1310,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1363,11 +1363,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1416,11 +1416,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1469,11 +1469,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1522,11 +1522,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1575,11 +1575,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1634,11 +1634,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1687,11 +1687,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1740,11 +1740,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1793,11 +1793,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1846,11 +1846,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1899,11 +1899,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -1952,11 +1952,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2005,11 +2005,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2058,11 +2058,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2111,11 +2111,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2164,11 +2164,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2217,11 +2217,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2270,11 +2270,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2323,11 +2323,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2376,11 +2376,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2429,11 +2429,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2482,11 +2482,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2535,11 +2535,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2588,11 +2588,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2641,11 +2641,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2694,11 +2694,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2747,11 +2747,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2800,11 +2800,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2853,11 +2853,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2906,11 +2906,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -2959,11 +2959,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3012,11 +3012,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3071,11 +3071,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3124,11 +3124,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3177,11 +3177,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3230,11 +3230,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3283,11 +3283,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3336,11 +3336,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3389,11 +3389,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3442,11 +3442,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3495,11 +3495,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3548,11 +3548,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3601,11 +3601,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3654,11 +3654,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3713,11 +3713,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3766,11 +3766,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3819,11 +3819,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3872,11 +3872,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3925,11 +3925,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -3978,11 +3978,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4032,11 +4032,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4085,11 +4085,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4144,11 +4144,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4197,11 +4197,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4250,11 +4250,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4303,11 +4303,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4356,11 +4356,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4409,11 +4409,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4462,11 +4462,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4521,11 +4521,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4574,11 +4574,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4627,11 +4627,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4681,11 +4681,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4740,11 +4740,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4793,11 +4793,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4846,11 +4846,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4900,11 +4900,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -4953,11 +4953,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -5007,11 +5007,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -5060,11 +5060,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -5113,11 +5113,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -5166,11 +5166,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -5219,11 +5219,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -5273,11 +5273,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -5327,11 +5327,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -5380,11 +5380,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -5434,11 +5434,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -5488,11 +5488,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {
@@ -5542,11 +5542,11 @@ export const products = [
           biodegradable: "100% Yes",
         },
         packaging: {
-          moq: "Typical MOQ is 1×20 ft container. We can accommodate trial orders for new wholesale partners.",
+          moq: "Typical MOQ is 1x20 ft container. We can accommodate trial orders for new wholesale partners.",
           packagingProtocol:
             "Inner: Customized boxed or bundled.\nOuter: HDPE bales, sturdy cartons, or shrink-wrapped pallets.",
           leadTimeAndPorts:
-            "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
+            "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin.",
           paymentTerms: "FOB, CIF.\nTerms: Advance, Irrevocable LC at Sight.",
         },
         compliance: {

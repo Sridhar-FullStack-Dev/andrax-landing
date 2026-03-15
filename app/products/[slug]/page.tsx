@@ -191,7 +191,7 @@ export default async function ProductPage({
                   </strong>
                   <span className="whitespace-pre-wrap">
                     {product.packaging?.leadTimeAndPorts ||
-                      "2–3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin."}
+                      "2-3 weeks post order confirmation.\nPorts of Loading: Chennai / Tuticorin."}
                   </span>
                 </p>
                 <p>
@@ -262,7 +262,7 @@ export default async function ProductPage({
                 </strong>
                 <p>
                   {product.compliance?.origin ||
-                    "Responsibly manufactured in India – Tamil Nadu (Pollachi / Coastal Belt), renowned for top-tier coir and agriculture."}
+                    "Responsibly manufactured in India - Tamil Nadu (Pollachi / Coastal Belt), renowned for top-tier coir and agriculture."}
                 </p>
               </div>
             </div>
