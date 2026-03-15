@@ -78,7 +78,7 @@ export default function RootLayout({
       <body className="antialiased">
         <Analytics />
         <SmoothScroll>
-          <div className="relative z-10 bg-off-white mb-100 shadow-b">
+          <div className="relative z-10 bg-off-white mb-100">
             <Navbar />
             {children}
             <Contact />

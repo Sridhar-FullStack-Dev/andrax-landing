@@ -134,9 +134,13 @@ export default function Navbar() {
 
       <div className="flex items-center justify-between px-8 bg-white relative z-20 shadow">
         <div className="w-1/3 flex items-center justify-start gap-6">
-          <div onMouseEnter={closeDropdown} className="cursor-pointer flex">
+          <Link
+            href={"/"}
+            onMouseEnter={closeDropdown}
+            className="cursor-pointer flex"
+          >
             <RollingText text="Home" />
-          </div>
+          </Link>
           <div onMouseEnter={closeDropdown} className="cursor-pointer flex">
             <RollingText text="About" />
           </div>
