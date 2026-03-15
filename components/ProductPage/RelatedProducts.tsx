@@ -34,7 +34,7 @@ export default function RelatedProducts({
             <Link
               href={`/products/${slugify(rp.name)}`}
               key={idx}
-              className="flex flex-col items-center"
+              className="flex flex-col items-center group"
             >
               <div className="w-full bg-white overflow-hidden mb-4 border-2 border-dashed border-primary-main p-4">
                 <Image
@@ -46,7 +46,7 @@ export default function RelatedProducts({
                 />
               </div>
               <span
-                className={`${jetbrainsMono.className} text-center font-bold text-primary-main text-sm md:text-base group-hover:text-accent-main transition-colors uppercase tracking-wide`}
+                className={`${jetbrainsMono.className} group-hover:underline underline-offset-2 text-center font-bold text-primary-main text-sm md:text-base transition-colors uppercase tracking-wide`}
               >
                 {rp.name}
               </span>

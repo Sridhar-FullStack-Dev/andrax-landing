@@ -116,7 +116,7 @@ export default function Products({ showAll = false }: { showAll?: boolean }) {
         )}
       </div>
 
-      <div className="relative flex justify-start items-center gap-2 my-6 z-10 w-full overflow-x-auto no-scrollbar pb-2">
+      <div className="relative flex justify-between items-center gap-2 my-6 z-10 w-full overflow-x-auto no-scrollbar pb-2">
         <div
           ref={indicatorRef}
           className="absolute left-0 top-0 bg-primary-main pointer-events-none z-0"
@@ -164,26 +164,25 @@ export default function Products({ showAll = false }: { showAll?: boolean }) {
               key={idx}
               className="flex flex-col items-center group cursor-pointer w-full overflow-hidden"
             >
-              <div className="product-image-wrap w-full aspect-3/4 bg-gray-50 flex items-center justify-center relative shadow-sm border border-gray-100 overflow-hidden rounded-none">
+              <div className="product-image-wrap w-full flex items-center justify-center relative shadow-sm overflow-hidden rounded-none">
                 <Image
                   src={item.image}
                   alt={item.name}
                   height={512}
                   width={512}
                   priority
-                  className="size-full object-contain z-0"
+                  className="h-110 object-cover z-0"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-black/50 via-black/20 to-transparent z-10 transition-opacity duration-500 group-hover:opacity-90" />
 
-                <div className="absolute inset-0 flex flex-col justify-end p-6 z-20">
+                <div className="absolute left-0 bottom-0 w-full flex flex-col justify-end z-20">
                   <div className="flex justify-between items-center">
                     <div
-                      className={`flex justify-start items-center gap-2 product-text text-left text-secondary-accent uppercase font-semibold text-lg ${jetbrainsMono.className} bg-primary-main w-fit px-4 py-2`}
+                      className={`flex group-hover:underline underline-offset-2 justify-start items-center gap-2 product-text text-left text-off-white-2 uppercase font-semibold text-lg ${jetbrainsMono.className} bg-primary-main w-fit px-4 py-2`}
                     >
                       {item.name}
                     </div>
 
-                    <div className="size-10.5 flex justify-center items-center gap-2 product-text text-left text-primary-main uppercase font-semibold text-lg bg-white">
+                    <div className="size-11 flex justify-center items-center gap-2 product-text text-left text-off-white-2 uppercase font-semibold text-lg bg-primary-main">
                       <GoArrowUpRight className="size-6" />
                     </div>
                   </div>
