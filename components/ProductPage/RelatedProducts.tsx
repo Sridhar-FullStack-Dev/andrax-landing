@@ -1,18 +1,23 @@
+"use client";
 import { archivo, jetbrainsMono } from "@/lib/fonts";
 import type { Product } from "@/lib/types/product";
 import { slugify } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 export default function RelatedProducts({
   relatedProducts,
 }: {
   relatedProducts: Product[];
 }) {
+  const router = useRouter();
+
   return (
     relatedProducts.length > 0 && (
       <section className="mt-12 bg-off-white-2 w-screen px-8 py-12">
-        <div className="flex justify-between items-end">
+        <div className="flex justify-between items-center">
           <div>
             <span
               className={`text-primary-main text-xs uppercase tracking-[0.3em] mb-3 block ${jetbrainsMono.className}`}
@@ -27,6 +32,8 @@ export default function RelatedProducts({
               <span className="text-primary-main italic">Products</span>
             </h2>
           </div>
+
+          <Button onClick={() => router.back()}>Go Back</Button>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">

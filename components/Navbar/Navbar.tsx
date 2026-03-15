@@ -1,25 +1,23 @@
 "use client";
 import { jetbrainsMono, lexendDeca } from "@/lib/fonts";
+import { slugify } from "@/lib/utils";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useRef } from "react";
-import { IoChevronDown } from "react-icons/io5";
+import { GoArrowUpRight } from "react-icons/go";
+import { IoChevronDown, IoClose } from "react-icons/io5";
+import { Button } from "../ui/button";
 import RollingText from "../ui/rolling-text";
 import UnderlineAnimText from "../ui/underline-anim";
 import TopBanner from "./TopBanner";
-import { IoClose } from "react-icons/io5";
-import { GoArrowUpRight } from "react-icons/go";
-import { useLenis } from "lenis/react";
-import { Button } from "../ui/button";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 export default function Navbar() {
-  const lenis = useLenis();
   const navRef = useRef<HTMLElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const lineRef = useRef<HTMLDivElement>(null);
@@ -148,13 +146,15 @@ export default function Navbar() {
             <RollingText text="Services" />
           </div>
 
-          <div
+          <Link
+            href="/products"
             className="cursor-pointer flex items-center gap-1"
             onMouseEnter={openDropdown}
+            onClick={closeDropdown}
           >
             <RollingText text="Products" />
             <IoChevronDown className="size-4" />
-          </div>
+          </Link>
         </div>
 
         <Link
@@ -208,6 +208,7 @@ export default function Navbar() {
                 "Coco Peat",
                 "Coconut milk",
               ]}
+              onLinkClick={closeDropdown}
             />
             <DropdownColumn
               title="Chemical Products"
@@ -218,6 +219,7 @@ export default function Navbar() {
                 "Potassium",
                 "Potassium Sulphate",
               ]}
+              onLinkClick={closeDropdown}
             />
             <DropdownColumn
               title="Fruits & Vegetable"
@@ -228,6 +230,7 @@ export default function Navbar() {
                 "Green Beans",
                 "Onion big",
               ]}
+              onLinkClick={closeDropdown}
             />
             <DropdownColumn
               title="Scrap Products"
@@ -237,10 +240,12 @@ export default function Navbar() {
                 "Plastic granules",
                 "Cotton box",
               ]}
+              onLinkClick={closeDropdown}
             />
             <DropdownColumn
               title="Animals Feed"
               links={["soyabean", "corn", "Alfalfa Hay"]}
+              onLinkClick={closeDropdown}
             />
             <DropdownColumn
               title="Plant & Nursing"
@@ -250,6 +255,7 @@ export default function Navbar() {
                 "Seed Nuts",
                 "Nursery Polybag Plants",
               ]}
+              onLinkClick={closeDropdown}
             />
             <DropdownColumn
               title="Petroleum Base"
@@ -259,6 +265,7 @@ export default function Navbar() {
                 "Paraffin Wax",
                 "Detergent Raw Materials",
               ]}
+              onLinkClick={closeDropdown}
             />
           </div>
 
@@ -274,12 +281,11 @@ export default function Navbar() {
               </div>
 
               <div className="flex justify-end items-center gap-4">
-                <Button
-                  variant={"outline"}
-                  onClick={() => lenis?.scrollTo("#products")}
-                >
-                  Show All Products
-                </Button>
+                <Link href="/products" passHref>
+                  <Button variant={"outline"} onClick={closeDropdown}>
+                    Show All Products
+                  </Button>
+                </Link>
 
                 <Button onClick={closeDropdown} aria-label="Close menu">
                   <RollingText text="close" />
@@ -290,19 +296,23 @@ export default function Navbar() {
             <div className="grid grid-cols-4 gap-6">
               <ProductCard
                 name="Coir Mulch Mats"
-                imageUrl="/products/andrax-coir-mulch-mat.png"
+                imageUrl="/products/coir-products/andrax-coir-mulch-mat.png"
+                onClick={closeDropdown}
               />
               <ProductCard
-                name="Fresh Fruits & Vegetables"
-                imageUrl="/products/andrax-strawberry.png"
+                name="Strawberry"
+                imageUrl="/products/fruits-and-vegetable/andrax-strawberry.png"
+                onClick={closeDropdown}
               />
               <ProductCard
-                name="Chemical Products"
-                imageUrl="/products/andrax-ethanol-alcohol.png"
+                name="Ethanol Alcohol"
+                imageUrl="/products/chemical-products/andrax-ethanol-alcohol.png"
+                onClick={closeDropdown}
               />
               <ProductCard
                 name="Petroleum Jelly"
-                imageUrl="/products/andrax-petroleum-jelly.png"
+                imageUrl="/products/petroleum-products/andrax-petroleum-jelly.png"
+                onClick={closeDropdown}
               />
             </div>
           </div>
@@ -312,18 +322,28 @@ export default function Navbar() {
   );
 }
 
-function DropdownColumn({ title, links }: { title: string; links: string[] }) {
+function DropdownColumn({
+  title,
+  links,
+  onLinkClick,
+}: {
+  title: string;
+  links: string[];
+  onLinkClick?: () => void;
+}) {
   return (
     <div>
       <h3 className="text-lg mb-2">{title}</h3>
       <ul className="space-y-1 text-sm">
         {links.map((link, i) => (
-          <li key={i} className="cursor-pointer">
-            <UnderlineAnimText
-              text={link}
-              textColor="#14342399"
-              lineColor="#43522B"
-            />
+          <li key={i} className="cursor-pointer" onClick={onLinkClick}>
+            <Link href={`/products/${slugify(link)}`}>
+              <UnderlineAnimText
+                text={link}
+                textColor="#14342399"
+                lineColor="#43522B"
+              />
+            </Link>
           </li>
         ))}
       </ul>
@@ -331,9 +351,21 @@ function DropdownColumn({ title, links }: { title: string; links: string[] }) {
   );
 }
 
-function ProductCard({ name, imageUrl }: { name: string; imageUrl: string }) {
+function ProductCard({
+  name,
+  imageUrl,
+  onClick,
+}: {
+  name: string;
+  imageUrl: string;
+  onClick?: () => void;
+}) {
   return (
-    <div className="group cursor-pointer relative aspect-4/5 overflow-hidden h-full">
+    <Link
+      href={`/products/${slugify(name)}`}
+      onClick={onClick}
+      className="group cursor-pointer relative aspect-4/5 overflow-hidden h-full block"
+    >
       <Image
         src={imageUrl}
         alt={name}
@@ -356,6 +388,6 @@ function ProductCard({ name, imageUrl }: { name: string; imageUrl: string }) {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
