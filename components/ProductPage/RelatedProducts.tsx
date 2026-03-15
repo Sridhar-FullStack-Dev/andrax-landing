@@ -3,8 +3,6 @@ import type { Product } from "@/lib/types/product";
 import { slugify } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
-import { Button } from "../ui/button";
 
 export default function RelatedProducts({
   relatedProducts,
@@ -28,16 +26,6 @@ export default function RelatedProducts({
               <br />
               <span className="text-primary-main italic">Products</span>
             </h2>
-          </div>
-
-          <div className="flex justify-end items-center gap-2">
-            <Button>
-              <FaArrowLeft />
-            </Button>
-
-            <Button>
-              <FaArrowRight />
-            </Button>
           </div>
         </div>
 
