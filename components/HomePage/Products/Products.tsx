@@ -1,12 +1,15 @@
 "use client";
-import { products } from "@/lib/const";
+import { Button } from "@/components/ui/button";
+import { products } from "@/lib/const/products";
 import { archivo, jetbrainsMono } from "@/lib/fonts";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import { slugify } from "@/lib/utils";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -102,7 +105,9 @@ export default function Products() {
           </h2>
         </div>
 
-        <div>ddfdf</div>
+        <Button className="text-secondary-accent">
+          Explore All our products <GoArrowUpRight className="size-6" />
+        </Button>
       </div>
 
       <div className="relative flex justify-start items-center gap-2 my-6 z-10 w-full overflow-x-auto no-scrollbar pb-2">
@@ -145,8 +150,9 @@ export default function Products() {
         key={activeTab}
         className="mt-8 grid grid-cols-4 gap-8"
       >
-        {products[activeTab].items?.map((item, idx) => (
-          <div
+        {products[activeTab].items?.slice(0, 8).map((item, idx) => (
+          <Link
+            href={`/products/${slugify(item.name)}`}
             key={idx}
             className="flex flex-col items-center group cursor-pointer w-full overflow-hidden"
           >
@@ -175,7 +181,7 @@ export default function Products() {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

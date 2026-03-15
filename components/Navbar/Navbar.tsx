@@ -13,6 +13,7 @@ import TopBanner from "./TopBanner";
 import { IoClose } from "react-icons/io5";
 import { GoArrowUpRight } from "react-icons/go";
 import { useLenis } from "lenis/react";
+import { Button } from "../ui/button";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -269,21 +270,17 @@ export default function Navbar() {
               </div>
 
               <div className="flex justify-end items-center gap-4">
-                <button
+                <Button
+                  variant={"outline"}
                   onClick={() => lenis?.scrollTo("#products")}
-                  className="text-lg px-4 py-2 flex items-center justify-center gap-1 bg-white border border-primary-main uppercase text-primary-main cursor-pointer w-fit"
                 >
                   Show All Products
-                </button>
+                </Button>
 
-                <button
-                  onClick={closeDropdown}
-                  aria-label="Close menu"
-                  className="text-lg px-4 py-2 flex items-center justify-center gap-1 bg-primary-main border border-primary-main uppercase text-off-white-2 cursor-pointer w-fit"
-                >
+                <Button onClick={closeDropdown} aria-label="Close menu">
                   <RollingText text="close" />
                   <IoClose className="size-6" />
-                </button>
+                </Button>
               </div>
             </div>
             <div className="grid grid-cols-4 gap-6">

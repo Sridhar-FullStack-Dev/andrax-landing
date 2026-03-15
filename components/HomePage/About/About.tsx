@@ -73,6 +73,7 @@ export default function About() {
           zoom={1}
         />
       </div>
+      
       <div className="relative z-10">
         {/* Heading */}
         <div className="contact-heading mb-20">
