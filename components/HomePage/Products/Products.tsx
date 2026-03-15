@@ -171,7 +171,7 @@ export default function Products({ showAll = false }: { showAll?: boolean }) {
                   height={512}
                   width={512}
                   priority
-                  className="h-150 object-cover z-0"
+                  className="h-110 object-cover z-0"
                 />
 
                 <div className="absolute left-0 bottom-0 w-full flex flex-col justify-end z-20">
